@@ -1,6 +1,7 @@
 <script lang="ts">
     import '../app.css';
     import favicon from '$lib/assets/favicon.svg';
+    import LeftMenu from '$lib/components/LeftMenu.svelte';
 
     let { children } = $props();
 </script>
@@ -10,7 +11,9 @@
     <div class="top-menu border flex justify-start items-center px-6">
         Top menu
     </div>
-    <div class="left-menu border">Left menu</div>
+
+    <LeftMenu />
+
     <div class="border">
         {@render children()}
     </div>
@@ -25,9 +28,5 @@
     .top-menu {
         grid-column: 2/3;
         grid-row: 1/2;
-    }
-    .left-menu {
-        grid-column: 1/2;
-        grid-row: 1/3;
     }
 </style>
