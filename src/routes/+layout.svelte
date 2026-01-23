@@ -9,7 +9,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <div class="main-wrapper h-screen w-screen">
     <div
-        class="top-menu border-b border-gray-300 flex justify-start items-center px-6"
+        class="top-menu border-b border-gray-300 flex justify-start items-center px-6 h-14"
     >
         Top menu
     </div>
