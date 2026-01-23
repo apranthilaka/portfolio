@@ -7,14 +7,16 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<div class="main-wrapper border h-screen w-screen">
-    <div class="top-menu border flex justify-start items-center px-6">
+<div class="main-wrapper h-screen w-screen">
+    <div
+        class="top-menu border-b border-gray-300 flex justify-start items-center px-6"
+    >
         Top menu
     </div>
 
     <LeftMenu />
 
-    <div class="border">
+    <div>
         {@render children()}
     </div>
 </div>

@@ -1,13 +1,17 @@
-<div class="left-menu">
-    <div class="border p-6">Logo and collapse button</div>
+<div class="left-menu border-r border-gray-300 h-full">
+    <div
+        class=" px-6 border-b border-gray-300 h-[56px] flex items-start justify-center"
+    >
+        Logo and collapse button
+    </div>
     <ul>
-        <li class="px-6 border h-10 flex justify-start items-center">
+        <li class="px-6 h-10 flex justify-start items-center">
             <a href="/">Home</a>
         </li>
-        <li class="px-6 border h-10 flex justify-start items-center">
-            <a href="/project1">Project 1</a>
+        <li class="px-6 h-10 flex justify-start items-center">
+            <a href="/projectone">Project 1</a>
         </li>
-        <li class="px-6 border h-10 flex justify-start items-center">
+        <li class="px-6 h-10 flex justify-start items-center">
             <a href="/project2">Project 2</a>
         </li>
     </ul>
