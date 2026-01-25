@@ -1,4 +1,5 @@
 <script>
+    import { fade } from 'svelte/transition';
     // In Svelte 5, we get data from the $props rune
     let { data } = $props();
 
@@ -6,7 +7,7 @@
     let bookList = $state(data.books);
 </script>
 
-<main class="p-6">
+<main transition:fade class="p-6">
     <h1 class="mb-6">Library Catalog</h1>
 
     {#if bookList.length > 0}
