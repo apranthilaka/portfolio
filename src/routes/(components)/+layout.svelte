@@ -12,7 +12,7 @@
 
     <LeftMenu />
 
-    <div>
+    <div class="content-area border">
         {@render children()}
     </div>
 </div>
@@ -26,5 +26,14 @@
     .top-menu {
         grid-column: 2/3;
         grid-row: 1/2;
+    }
+
+    .content-area {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        padding-bottom: 24px;
     }
 </style>

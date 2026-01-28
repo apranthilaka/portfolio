@@ -5,8 +5,8 @@
     html {
         /* Sets the root font size to 14px */
         /* font-size: 0.875rem; */
-        font-size: 0.9375rem;
+        /* font-size: 0.9375rem; */
 
-        color: var(--color-gray-500);
+        /* color: var(--color-gray-500); */
     }
 }
