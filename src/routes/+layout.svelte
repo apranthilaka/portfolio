@@ -6,5 +6,4 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<!-- all the pages tender through this -->
 {@render children()}

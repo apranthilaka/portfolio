@@ -23,7 +23,7 @@
 <style>
     .main-wrapper {
         display: grid;
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: max-content 1fr;
         grid-template-rows: 56px 1fr;
     }
 
