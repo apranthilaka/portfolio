@@ -1,5 +1,5 @@
 <div
-    class="top-menu border-b border-gray-300 flex justify-start items-center px-6 h-14"
+    class="top-menu border-b border-gray-200 flex justify-start items-center px-6 h-14 text-sm"
 >
     Top menu
 </div>

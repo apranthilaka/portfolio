@@ -6,7 +6,7 @@
     // let bookList = $state(data.books);
 </script>
 
-<div class=" font-medium p-6">Cards</div>
+<div class="p-6 text-sm font-medium">Cards</div>
 
 <!-- {#each data.books as book}
         <div class="border">
