@@ -1,0 +1,5 @@
+[
+    { "id": 1, "title": "Hero Section", "status": "Complete" },
+    { "id": 2, "title": "Navigation Bar", "status": "In Progress" },
+    { "id": 3, "title": "Footer Component", "status": "Pending" }
+]
