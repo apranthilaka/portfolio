@@ -21,3 +21,26 @@ export async function load() {
         books: data ?? [],
     };
 }
+
+export const actions = {
+    create: async ({ request }) => {
+        const formData = await request.formData();
+        const title = formData.get('title');
+        const author = formData.get('author');
+
+        // Basic validation
+        if (!title || !author) {
+            return fail(400, { message: 'Missing title or author' });
+        }
+
+        const { error } = await supabase
+            .from('books')
+            .insert([{ title, author }]);
+
+        if (error) {
+            return fail(500, { message: 'Could not add book' });
+        }
+
+        return { success: true };
+    },
+};
