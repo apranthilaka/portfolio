@@ -8,24 +8,6 @@
 
 <div class="p-6 text-sm font-medium">Cards</div>
 
-<!-- {#each data.books as book}
-        <div class="border">
-            <div>
-                {book.title}
-            </div>
-            <div>
-                {book.author}
-            </div>
-            <div>
-                <small
-                    >Added: {new Date(
-                        book.created_at,
-                    ).toLocaleDateString()}</small
-                >
-            </div>
-        </div>
-    {/each} -->
-
 <div class="card-container-1 px-6 gap-6">
     <!-- card one  -->
     <div
@@ -34,14 +16,14 @@
         <div class="border-b border-gray-200 text-sm p-4 font-medium">
             Branch Locations
         </div>
-        <div class="flex flex-row border-b border-gray-200 p-4">
-            <div class="flex flex-col w-full">
-                <div class="text-sm">Green Valley Bank</div>
-                <div class="text-sm text-gray-500">
+        <div class="flex flex-row border-b border-gray-200 p-4 gap-4">
+            <div class="flex flex-col w-fill grow overflow-hidden">
+                <div class="text-sm truncate">Green Valley Bank</div>
+                <div class="text-sm text-gray-500 truncate">
                     1234 Financial Way, Prosperity, TX 75001
                 </div>
             </div>
-            <div class="flex flex-row gap-4 items-center w-auto min-w-87.5">
+            <div class="flex flex-row gap-2 items-center justify-end w-[500px]">
                 <label for="Headline" class="w-full">
                     <select
                         name="Headline"
@@ -93,6 +75,73 @@
                 class="h-full w-full object-cover"
                 alt="Description"
             /> -->
+        </div>
+        <!-- table  -->
+        <div
+            class="overflow-hidden rounded-lg border border-gray-200 shadow-sm p-3"
+        >
+            <table
+                class="min-w-full divide-y divide-gray-200 bg-white text-sm border border-gray-200 rounded-md"
+            >
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th
+                            class="px-4 py-2 text-left font-medium text-gray-900"
+                            >Banking Products</th
+                        >
+                        <th
+                            class="px-4 py-2 text-left font-medium text-gray-900"
+                            >Branch Usage Stats</th
+                        >
+                        <th
+                            class="px-4 py-2 text-left font-medium text-gray-900"
+                            >Service Charge</th
+                        >
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-4 py-2 text-gray-700">Jane Cooper</td>
+                        <td class="px-4 py-2 text-gray-500">Developer</td>
+                        <td class="px-4 py-2">
+                            <span
+                                class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+                                >Active</span
+                            >
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-4 py-2 text-gray-700">Cody Fisher</td>
+                        <td class="px-4 py-2 text-gray-500">Designer</td>
+                        <td class="px-4 py-2">
+                            <span
+                                class="inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                                >Away</span
+                            >
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-4 py-2 text-gray-700">Cody Fisher</td>
+                        <td class="px-4 py-2 text-gray-500">Designer</td>
+                        <td class="px-4 py-2">
+                            <span
+                                class="inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                                >Away</span
+                            >
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-4 py-2 text-gray-700">Cody Fisher</td>
+                        <td class="px-4 py-2 text-gray-500">Designer</td>
+                        <td class="px-4 py-2">
+                            <span
+                                class="inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                                >Away</span
+                            >
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- card one  -->
@@ -219,7 +268,7 @@
 
         <div class="h-70 w-full">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2180.4554436905387!2d79.84082817138253!3d6.931318265338344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1769703237632!5m2!1sen!2slk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.347357796862!2d79.83560613476565!3d6.939880486822529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1769944100240!5m2!1sen!2slk"
                 width="100%"
                 height="100%"
                 style="border:0;"

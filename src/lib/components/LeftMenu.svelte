@@ -3,6 +3,7 @@
     let componentMenuPaths = [
         { path: '/components', name: 'components' },
         { path: '/components/forms', name: 'forms' },
+        { path: '/components/mydbtest', name: 'dbtest' },
         { path: '/components/designsystem', name: 'design system' },
     ];
 
