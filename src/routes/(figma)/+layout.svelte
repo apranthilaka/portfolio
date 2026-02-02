@@ -1,8 +1,8 @@
 <script lang="ts">
     import LeftMenu from '$lib/components/LeftMenu.svelte';
-    import TopMenu from '$lib/components/TopMenu.svelte';
     import { fade } from 'svelte/transition';
     import { page } from '$app/state'; // Import the page state
+    import TopMenu from './figma/components/TopMenu.svelte';
 
     let { children } = $props();
 </script>

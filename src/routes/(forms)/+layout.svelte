@@ -7,7 +7,6 @@
     let { children } = $props();
 </script>
 
-comonent layout
 <div class="main-wrapper h-screen w-screen">
     <TopMenu />
     <LeftMenu />
