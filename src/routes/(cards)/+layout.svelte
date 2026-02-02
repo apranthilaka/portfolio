@@ -7,11 +7,12 @@
     let { children } = $props();
 </script>
 
+comonent layout
 <div class="main-wrapper h-screen w-screen">
     <TopMenu />
     <LeftMenu />
 
-    <div class="content-area">
+    <div class="content-area bg-slate-50">
         {#key page.url.pathname}
             <div in:fade={{ duration: 300 }}>
                 {@render children()}

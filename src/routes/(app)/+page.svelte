@@ -7,7 +7,7 @@
     <div class="mt-4 flex flex-row gap-2">
         <a
             class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-            href="../components">Components</a
+            href="../cards">Components</a
         >
         <a
             class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"

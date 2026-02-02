@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     let { data } = $props();
 </script>
 
@@ -12,4 +12,5 @@
             {entry.useremail}
         </div>
     {/each}
-</div>
+</div> -->
+cards c

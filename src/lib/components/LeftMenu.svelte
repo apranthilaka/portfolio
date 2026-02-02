@@ -1,22 +1,22 @@
 <script>
     import { page } from '$app/state';
     let componentMenuPaths = [
-        { path: '/components', name: 'components' },
-        { path: '/components/forms', name: 'forms' },
-        { path: '/components/mydbtest', name: 'dbtest' },
-        { path: '/components/designsystem', name: 'design system' },
+        // { path: '/cards', name: 'Cards' },
+        { path: '/cards/cardsa', name: 'Cards 1' },
+        { path: '/cards/cardsb', name: 'Cards 2' },
+        { path: '/cards/cardsc', name: 'Cards 3' },
     ];
 
     let designSystemMenuPaths = [
-        { path: '/designsystem', name: 'design system' },
-        { path: '/designsystem/forms', name: 'designsystem forms' },
-        { path: '/designsystem/designsystem', name: 'designsystem test' },
+        // { path: '/forms', name: 'Forms' },
+        { path: '/forms/formsa', name: 'Forms 1' },
+        { path: '/forms/formsb', name: 'Forms 2' },
     ];
 
     let figmaDesignPaths = [
-        { path: '/figma', name: 'figma system' },
-        { path: '/figma/forms', name: 'figma forms' },
-        { path: '/figma/designsystem', name: 'figma test' },
+        // { path: '/figma', name: 'figma system' },
+        { path: '/figma/figmacards', name: 'Figma Cards' },
+        { path: '/figma/figmaforms', name: 'Figma Forms' },
     ];
     console.log(page.url.pathname);
 </script>
