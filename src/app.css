@@ -1,3 +1,11 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/* Define the dark mode strategy */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Standard global styles */
+body {
+    @apply bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200;
+}

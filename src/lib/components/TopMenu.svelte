@@ -1,7 +1,14 @@
+<script>
+    import ThemeToggle from './ThemeToggle.svelte';
+</script>
+
 <div
     class="top-menu border-b border-gray-200 flex justify-start items-center px-6 h-14 text-sm"
 >
-    Top menu
+    top menu
+    <!-- <nav class="p-4 flex justify-end">
+        <ThemeToggle />
+    </nav> -->
 </div>
 
 <style>

@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <script>
+            // Execute immediately to prevent flicker
+            const saved = localStorage.getItem('theme');
+            const systemDark = window.matchMedia(
+                '(prefers-color-scheme: dark)',
+            ).matches;
+
+            if (saved === 'dark' || (!saved && systemDark)) {
+                document.documentElement.classList.add('dark');
+            }
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         %sveltekit.head%

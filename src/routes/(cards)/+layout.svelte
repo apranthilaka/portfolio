@@ -11,7 +11,7 @@
     <TopMenu />
     <LeftMenu />
 
-    <div class="content-area bg-slate-50">
+    <div class="content-area bg-slate-50 dark:bg-gray-900">
         {#key page.url.pathname}
             <div in:fade={{ duration: 300 }}>
                 {@render children()}

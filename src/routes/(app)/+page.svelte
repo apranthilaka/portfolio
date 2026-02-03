@@ -2,6 +2,13 @@
     <div
         class="flex flex-col items-center justify-center h-screen w-full lg:w-[600px] px-10"
     >
+        <div
+            class="mb-8 border border-red-200 rounded-md w-full px-4 py-4 text-sm bg-red-50 text-red-500 text-center flex items-center justify-center"
+        >
+            I'm currently polishing up my 2026 updates! Some components and
+            designs are still behind the scenes, but the full collection will be
+            live soon.
+        </div>
         <div class="mb-4 flex flex-col items-center">
             <div class="font-medium text-lg text-gray-800">Hi! Im Aravinda</div>
             <div class=" text-gray-950 max-w-xl text-center">
@@ -30,13 +37,6 @@
                 class="border border-gray-300 text-xs px-5 h-8 flex items-center justify-center rounded-full text-gray-900 hover:text-gray-900 hover:bg-gray-100 hover:font-medium transition-all delay-75 grow w-full"
                 href="../figma/figmacards">Figma Designs</a
             >
-        </div>
-        <div
-            class="mt-6 border border-red-200 rounded-md w-full px-4 py-3 text-xs bg-red-50 text-red-500 text-center flex items-center justify-center"
-        >
-            I'm currently polishing up my 2026 updates! Some components and
-            designs are still behind the scenes, but the full collection will be
-            live soon.
         </div>
     </div>
 </div>
