@@ -17,20 +17,20 @@
             powered by Supabase. <br /> <br /> Explore my design systems and developed
             components below.
         </div>
-        <div class="mt-4 flex flex-row gap-2">
+        <div class="mt-4 flex flex-row gap-2 w-full">
             <a
-                class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                class="border border-gray-300 text-xs px-5 h-8 flex items-center justify-center rounded-full text-gray-900 hover:text-gray-900 hover:bg-gray-100 hover:font-medium transition-all delay-75 grow w-full"
                 href="../cards/cardsa">Components</a
             >
             <a
-                class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                class="border border-gray-300 text-xs px-5 h-8 flex items-center justify-center rounded-full text-gray-900 hover:text-gray-900 hover:bg-gray-100 hover:font-medium transition-all delay-75 grow w-full"
                 target="_blank"
-                href="https://github.com/apranthilaka">Forms</a
+                href="../forms/formsa">Forms</a
             >
             <a
-                class="border border-gray-300 text-sm px-5 h-8 flex items-center justify-center rounded-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                class="border border-gray-300 text-xs px-5 h-8 flex items-center justify-center rounded-full text-gray-900 hover:text-gray-900 hover:bg-gray-100 hover:font-medium transition-all delay-75 grow w-full"
                 target="_blank"
-                href="https://www.figma.com/@aravinda">Other...</a
+                href="../figma/figmacards">Figma Designs</a
             >
         </div>
         <div
