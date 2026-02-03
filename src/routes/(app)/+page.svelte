@@ -24,12 +24,10 @@
             >
             <a
                 class="border border-gray-300 text-xs px-5 h-8 flex items-center justify-center rounded-full text-gray-900 hover:text-gray-900 hover:bg-gray-100 hover:font-medium transition-all delay-75 grow w-full"
-                target="_blank"
                 href="../forms/formsa">Forms</a
             >
             <a
                 class="border border-gray-300 text-xs px-5 h-8 flex items-center justify-center rounded-full text-gray-900 hover:text-gray-900 hover:bg-gray-100 hover:font-medium transition-all delay-75 grow w-full"
-                target="_blank"
                 href="../figma/figmacards">Figma Designs</a
             >
         </div>
