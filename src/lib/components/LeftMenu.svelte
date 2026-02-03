@@ -2,21 +2,21 @@
     import { page } from '$app/state';
     let componentMenuPaths = [
         // { path: '/cards', name: 'Cards' },
-        { path: '/cards/cardsa', name: 'Cards 1' },
-        { path: '/cards/cardsb', name: 'Cards 2' },
-        { path: '/cards/cardsc', name: 'Cards 3' },
+        { path: '/cards/cardsa', name: 'Cards' },
+        // { path: '/cards/cardsb', name: 'Cards 2' },
+        // { path: '/cards/cardsc', name: 'Cards 3' },
     ];
 
     let designSystemMenuPaths = [
         // { path: '/forms', name: 'Forms' },
-        { path: '/forms/formsa', name: 'Forms 1' },
-        { path: '/forms/formsb', name: 'Forms 2' },
+        { path: '/forms/formsa', name: 'Forms' },
+        // { path: '/forms/formsb', name: 'Forms 2' },
     ];
 
     let figmaDesignPaths = [
         // { path: '/figma', name: 'figma system' },
         { path: '/figma/figmacards', name: 'Figma Cards' },
-        { path: '/figma/figmaforms', name: 'Figma Forms' },
+        // { path: '/figma/figmaforms', name: 'Figma Forms' },
     ];
     console.log(page.url.pathname);
 </script>
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
-        Components
+        Card Designs
     </div>
     <ul class="px-2">
         {#each componentMenuPaths as menu}
@@ -52,7 +52,7 @@
         {/each}
     </ul>
     <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
-        Design systems
+        Form Designs
     </div>
 
     <ul class="px-2">
@@ -73,7 +73,7 @@
     </ul>
 
     <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
-        Figma Design Paths
+        Figma Designs
     </div>
 
     <ul class="px-2">

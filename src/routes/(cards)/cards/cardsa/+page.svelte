@@ -16,7 +16,7 @@
 <div class="card-container-1 px-6 gap-6">
     <!-- card one  -->
     <div
-        class="border border-gray-200 rounded-md h-200 shadow-sm hover:shadow-md transition-all delay-75 flex flex-col"
+        class="border border-gray-200 rounded-md h-200 shadow-sm hover:shadow-md transition-all delay-75 flex flex-col bg-white"
     >
         <div class="border-b border-gray-200 p-4 font-medium text-gray-950">
             Branch Locations
@@ -79,7 +79,7 @@
             ></iframe>
         </div>
         <!-- table  -->
-        <div class=" border-t border-gray-200 p-4 h-auto border">
+        <div class=" border-t border-gray-200 p-4 h-auto">
             <table
                 class="min-w-full divide-y divide-gray-200 bg-white text-sm border"
             >
@@ -160,7 +160,7 @@
     <!-- card one  -->
 
     <!-- card two  -->
-    <div class="flex flex-col h-[800px] gap-4">
+    <div class="flex flex-col h-[800px] gap-4 bg-white">
         <div
             class="grow flex flex-col border border-gray-200 overflow-hidden border-border-gray-200 rounded-md shadow-sm hover:shadow-md"
         >
@@ -250,7 +250,7 @@
 
     <!-- card three  -->
     <div
-        class="border border-gray-200 rounded-lg h-auto overflow-hidden shadow-sm hover:shadow-md"
+        class="border border-gray-200 rounded-lg h-auto overflow-hidden shadow-sm hover:shadow-md bg-white"
     >
         <div class="border-b border-gray-200 text-sm p-4 font-medium">
             Branch Locations
