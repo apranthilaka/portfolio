@@ -32,7 +32,7 @@
         grid-row: 2/3;
         display: grid; /* Changed to grid for easier positioning */
         overflow-y: auto;
-        padding-bottom: 24px;
+        /* padding-bottom: 24px; */
     }
 
     /* This ensures the child takes up the full space of the content-area */
