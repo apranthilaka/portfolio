@@ -33,6 +33,16 @@
         display: grid; /* Changed to grid for easier positioning */
         overflow-y: auto;
         padding-bottom: 24px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Firefox */
+        scrollbar-width: none;
+
+        /* Internet Explorer and legacy Edge */
+        -ms-overflow-style: none;
     }
 
     /* This ensures the child takes up the full space of the content-area */
