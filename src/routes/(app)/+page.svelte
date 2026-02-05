@@ -1,6 +1,6 @@
 <div class="w-screen flex items-center justify-center">
     <div
-        class="flex flex-col items-center justify-center h-screen w-full lg:w-[600px] px-10"
+        class="flex flex-col items-center justify-center h-screen w-full lg:w-[600px]"
     >
         <div
             class="mb-8 border border-red-200 rounded-md w-full px-4 py-4 text-sm bg-red-50 text-red-500 text-center flex items-center justify-center"
@@ -21,13 +21,13 @@
             </span>
             <br />
 
-            I build Tailwind-ready design systems in Figma, specifically
-            structured for a seamless transition to code. By translating these
-            systems into SvelteKit, I deliver high-performance, browser-native
+            I build design systems and interfaces in Figma, specifically
+            structured for a seamless transition to code. By translating them
+            into SvelteKit, I deliver high-performance, browser-native
             prototypes that capture the true look, feel, and interactivity of
             the final product.
             <br /><br />
-            <span class="text-sm text-gray-950 line-clamp-">
+            <span class="text-sm text-gray-950">
                 The proof is in the build: this entire portfolio is a live
                 demonstration of my stack, developed with <span
                     class="font-medium">SvelteKit</span
