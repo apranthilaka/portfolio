@@ -2,14 +2,14 @@
     import { page } from '$app/state';
     let componentMenuPaths = [
         // { path: '/cards', name: 'Cards' },
-        { path: '/cards/cardsa', name: 'Cards' },
-        // { path: '/cards/cardsb', name: 'Cards 2' },
+        { path: '/cards/cardsa', name: 'Data Display' },
+        { path: '/cards/cardsb', name: 'Branding' },
         // { path: '/cards/cardsc', name: 'Cards 3' },
     ];
 
     let designSystemMenuPaths = [
         // { path: '/forms', name: 'Forms' },
-        { path: '/forms/formsa', name: 'Forms' },
+        { path: '/forms/formsa', name: 'Forms & Input' },
         // { path: '/forms/formsb', name: 'Forms 2' },
     ];
 
@@ -32,8 +32,25 @@
             <i class="ph ph-x"></i>
         </div>
     </div>
+    <div class="px-3 h-9 text-xs text-gray-400 flex items-center">Branding</div>
+    <ul class="px-2">
+        {#each componentMenuPaths as menu}
+            <li>
+                <a
+                    class={[
+                        ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                        {
+                            'bg-gray-100 text-gray-950 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
+                                page.url.pathname === menu.path,
+                        },
+                    ]}
+                    href={menu.path}>{menu.name}</a
+                >
+            </li>
+        {/each}
+    </ul>
     <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
-        Card Designs
+        Data Display
     </div>
     <ul class="px-2">
         {#each componentMenuPaths as menu}
@@ -52,7 +69,7 @@
         {/each}
     </ul>
     <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
-        Form Designs
+        Forms and Inputs
     </div>
 
     <ul class="px-2">

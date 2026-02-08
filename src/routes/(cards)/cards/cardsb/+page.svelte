@@ -1,65 +1,42 @@
 <script>
+    import CardOne from './components/CardOne.svelte';
+    import CardTwo from './components/CardTwo.svelte';
+
+    // In Svelte 5, we get data from the $props rune
     let { data } = $props();
 
-    // Svelte 5 reactive state for the form inputs
-    let title = $state('');
-    let author = $state('');
-
-    let users = [
-        { id: 1, name: 'Alice', role: 'Admin' },
-        { id: 2, name: 'Bob', role: 'User' },
-    ];
+    // We can make the books reactive using the $state rune
+    // let bookList = $state(data.books);
 </script>
 
-<!-- 1. Define the snippet -->
-{#snippet userBadge(user)}
-    <div class="badge">
-        <strong>{user.name}</strong> — <span>{user.role}</span>
+<div class="p-6 font-medium flex flex-row justify-between">
+    <div>Cards</div>
+    <div>
+        <a href="">Figma</a>
     </div>
-{/snippet}
+</div>
 
-<h2>Team Members</h2>
-<ul>
-    {#each users as user}
-        <li>
-            <!-- 2. Render the snippet -->
-            {@render userBadge(user)}
-        </li>
-    {/each}
-</ul>
+<div class="card-container-1 px-6 gap-6">
+    <!-- card one -->
+    <CardOne />
+    <!-- card one  -->
+    <!-- card  -->
+    <CardTwo />
+    <!-- card  -->
 
-<h2>Add a New Book</h2>
-<form method="POST" action="?/create">
-    <input
-        type="text"
-        name="title"
-        bind:value={title}
-        placeholder="Book Title"
-        required
-    />
-    <input
-        type="text"
-        name="author"
-        bind:value={author}
-        placeholder="Author Name"
-        required
-    />
-    <button type="submit">Add Book</button>
-</form>
+    <!-- card one -->
+    <CardOne />
+    <!-- card one  -->
 
-<h2>Books</h2>
-<ul>
-    {#each data.books as book}
-        <li>{book.title} and {book.author}</li>
-    {:else}
-        <li>No books found. Check your database connection!</li>
-    {/each}
-</ul>
+    <!-- card  -->
+    <CardTwo />
+    <!-- card  -->
+</div>
 
 <style>
-    .badge {
-        border: 1px solid #ccc;
-        padding: 0.5rem;
-        margin: 0.2rem;
+    .card-container-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        grid-template-rows: 800px;
     }
 </style>
