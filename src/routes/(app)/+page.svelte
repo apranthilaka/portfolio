@@ -38,15 +38,7 @@
         <div class="mt-4 flex flex-row gap-2 w-full">
             <a
                 class="border border-gray-300 px-5 h-8 flex items-center justify-center rounded-full text-gray-800 hover:text-gray-900 hover:bg-gray-100 transition-all delay-75 grow w-full"
-                href="../cards/cardsa">Components</a
-            >
-            <a
-                class="border border-gray-300 px-5 h-8 flex items-center justify-center rounded-full text-gray-800 hover:text-gray-900 hover:bg-gray-100 transition-all delay-75 grow w-full"
-                href="../forms/formsa">Forms</a
-            >
-            <a
-                class="border border-gray-300 px-5 h-8 flex items-center justify-center rounded-full text-gray-800 hover:text-gray-900 hover:bg-gray-100 transition-all delay-75 grow w-full"
-                href="../figma/figmacards">Figma Designs</a
+                href="../datadisplay/contentcards">View Components</a
             >
         </div>
     </div>

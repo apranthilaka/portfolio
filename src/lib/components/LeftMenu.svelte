@@ -1,29 +1,44 @@
 <script>
     import { page } from '$app/state';
-    let componentMenuPaths = [
+    let dataDisplay = [
         // { path: '/cards', name: 'Cards' },
-        { path: '/cards/cardsa', name: 'Data Display' },
-        { path: '/cards/cardsb', name: 'Branding' },
-        // { path: '/cards/cardsc', name: 'Cards 3' },
+        { path: '/datadisplay/contentcards', name: 'Content cards' },
+        { path: '/datadisplay/productcards', name: 'Product cards' },
+        { path: '/datadisplay/userprofilecards', name: 'Profile cards' },
+        { path: '/datadisplay/dashboardelementcards', name: 'Dashboard cards' },
     ];
 
-    let designSystemMenuPaths = [
-        // { path: '/forms', name: 'Forms' },
-        { path: '/forms/formsa', name: 'Forms & Input' },
-        // { path: '/forms/formsb', name: 'Forms 2' },
+    let formAndInputs = [
+        // { path: '/cards', name: 'Cards' },
+        { path: '/formandinputs/applogin', name: 'App Login' },
+        { path: '/formandinputs/usercreation', name: 'User creation' },
+    ];
+    let branding = [
+        // { path: '/cards', name: 'Cards' },
+        { path: '/branding/product', name: 'Product' },
+        { path: '/branding/people', name: 'People' },
+        { path: '/branding/services', name: 'Services' },
     ];
 
-    let figmaDesignPaths = [
-        // { path: '/figma', name: 'figma system' },
-        { path: '/figma/figmacards', name: 'Figma Cards' },
-        // { path: '/figma/figmaforms', name: 'Figma Forms' },
+    let dataVisualisation = [
+        // { path: '/cards', name: 'Cards' },
+        { path: '/datavisualisation/dvtypeone', name: 'DV type 1' },
+        { path: '/datavisualisation/dvtypetwo', name: 'DV type 2' },
+        { path: '/datavisualisation/dvtypethree', name: 'DV type 3' },
     ];
+
+    let designSystems = [
+        { path: '/designsystems/dsone', name: 'Design System Alpha' },
+        { path: '/designsystems/dstwo', name: 'Design System Bravo' },
+    ];
+
+    let figmaDesigns = [{ path: '/figma/figmacards', name: 'Figma Cards' }];
     console.log(page.url.pathname);
 </script>
 
-<div class="left-menu border-r border-gray-200 w-[230px]">
+<div class="left-menu border-r border-gray-200 w-[230px] flex flex-col">
     <div
-        class=" px-6 border-b border-gray-200 h-14 flex items-center justify-between"
+        class=" px-6 border-b border-gray-200 min-h-14 flex items-center justify-between"
     >
         <span class="text-gray-950 font-medium mr-3 text-sm">
             <a href="/">Home</a>
@@ -32,88 +47,170 @@
             <i class="ph ph-x"></i>
         </div>
     </div>
-    <div class="px-3 h-9 text-xs text-gray-400 flex items-center">Branding</div>
-    <ul class="px-2">
-        {#each componentMenuPaths as menu}
-            <li>
-                <a
-                    class={[
-                        ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
-                        {
-                            'bg-gray-100 text-gray-950 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
-                                page.url.pathname === menu.path,
-                        },
-                    ]}
-                    href={menu.path}>{menu.name}</a
-                >
-            </li>
-        {/each}
-    </ul>
-    <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
-        Data Display
-    </div>
-    <ul class="px-2">
-        {#each componentMenuPaths as menu}
-            <li>
-                <a
-                    class={[
-                        ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
-                        {
-                            'bg-gray-100 text-gray-950 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
-                                page.url.pathname === menu.path,
-                        },
-                    ]}
-                    href={menu.path}>{menu.name}</a
-                >
-            </li>
-        {/each}
-    </ul>
-    <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
-        Forms and Inputs
-    </div>
+    <div class=" overflow-y-auto modern-scrollbar">
+        <!-- Data display  -->
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
+            Data Display
+        </div>
+        <ul class="px-2">
+            {#each dataDisplay as menuItem}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            {
+                                'bg-gray-100 text-gray-950 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
+                                    page.url.pathname === menuItem.path,
+                            },
+                        ]}
+                        href={menuItem.path}>{menuItem.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- Data display  -->
 
-    <ul class="px-2">
-        {#each designSystemMenuPaths as menu}
-            <li>
-                <a
-                    class={[
-                        ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
-                        {
-                            'bg-gray-100 text-gray-950':
-                                page.url.pathname === menu.path,
-                        },
-                    ]}
-                    href={menu.path}>{menu.name}</a
-                >
-            </li>
-        {/each}
-    </ul>
+        <!-- Form inputs  -->
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+            Forms and Inputs
+        </div>
+        <ul class="px-2">
+            {#each formAndInputs as menuItem}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            {
+                                'bg-gray-100 text-gray-950':
+                                    page.url.pathname === menuItem.path,
+                            },
+                        ]}
+                        href={menuItem.path}>{menuItem.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- Form inputs  -->
 
-    <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
-        Figma Designs
+        <!-- branding  -->
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
+            Branding
+        </div>
+        <ul class="px-2">
+            {#each branding as menuItem}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            {
+                                'bg-gray-100 text-gray-950 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
+                                    page.url.pathname === menuItem.path,
+                            },
+                        ]}
+                        href={menuItem.path}>{menuItem.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- branding  -->
+
+        <!-- Data visualisation  -->
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
+            Data visualisation
+        </div>
+        <ul class="px-2">
+            {#each dataVisualisation as menuItem}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            {
+                                'bg-gray-100 text-gray-950 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
+                                    page.url.pathname === menuItem.path,
+                            },
+                        ]}
+                        href={menuItem.path}>{menuItem.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- Data visualisation   -->
+
+        <!-- Design systems  -->
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+            Forms and Inputs
+        </div>
+        <ul class="px-2">
+            {#each designSystems as menuItem}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            {
+                                'bg-gray-100 text-gray-950':
+                                    page.url.pathname === menuItem.path,
+                            },
+                        ]}
+                        href={menuItem.path}>{menuItem.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- Designs systems  -->
+
+        <!-- Figma Designs  -->
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+            Figma Designs
+        </div>
+        <ul class="px-2">
+            {#each figmaDesigns as menu}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            {
+                                'bg-gray-100 text-gray-950':
+                                    page.url.pathname === menu.path,
+                            },
+                        ]}
+                        href={menu.path}>{menu.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- Form inputs  -->
     </div>
-
-    <ul class="px-2">
-        {#each figmaDesignPaths as menu}
-            <li>
-                <a
-                    class={[
-                        ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
-                        {
-                            'bg-gray-100 text-gray-950':
-                                page.url.pathname === menu.path,
-                        },
-                    ]}
-                    href={menu.path}>{menu.name}</a
-                >
-            </li>
-        {/each}
-    </ul>
 </div>
 
 <style>
     .left-menu {
         grid-column: 1/2;
         grid-row: 1/3;
+    }
+
+    .modern-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: #d1d5db transparent; /* thumb | track */
+    }
+
+    /* 2. Webkit approach (Chrome, Safari, Edge) */
+    .modern-scrollbar::-webkit-scrollbar {
+        width: 6px; /* Vertical width */
+        height: 6px; /* Horizontal height */
+    }
+
+    .modern-scrollbar::-webkit-scrollbar-track {
+        background: transparent; /* Makes the track invisible */
+    }
+
+    .modern-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #d1d5db; /* Light gray */
+        border-radius: 10px; /* Round edges */
+        border: 1px solid transparent; /* Acts as padding if track had color */
+    }
+
+    /* Hover effect */
+    .modern-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #9ca3af; /* Slightly darker gray */
     }
 </style>
