@@ -1,6 +1,6 @@
 <div class="w-screen flex items-center justify-center">
     <div
-        class="flex flex-col items-center justify-center h-screen w-full lg:w-[600px]"
+        class="flex flex-col items-center justify-center h-screen w-full lg:w-150"
     >
         <div
             class="mb-8 border border-red-200 rounded-md w-full px-4 py-4 text-sm bg-red-50 text-red-500 text-center flex items-center justify-center"
@@ -9,12 +9,7 @@
             designs are still behind the scenes, but the full collection will be
             live soon.
         </div>
-        <!-- <div class="mb-4 flex flex-col items-center">
-            <div class="font-medium text-lg text-gray-800">Hi! Im Aravinda</div>
-            <div class=" text-gray-950 max-w-xl text-center">
-                I design & develop things that look great and scale even better.
-            </div>
-        </div> -->
+
         <div class="text-center text-gray-800 mb-4">
             <span class="font-medium">
                 Design & develop things that look great and scale even better.
@@ -35,9 +30,11 @@
                 powered by <span class="font-medium">Supabase</span>.
             </span>
         </div>
-        <div class="mt-4 flex flex-row gap-2 w-full">
+        <div
+            class="mt-4 flex flex-row gap-2 w-full items-center justify-center"
+        >
             <a
-                class="border border-gray-300 px-5 h-8 flex items-center justify-center rounded-full text-gray-800 hover:text-gray-900 hover:bg-gray-100 transition-all delay-75 grow w-full"
+                class="border bg-gray-950 text-white px-5 h-10 flex items-center justify-center rounded-full"
                 href="../datadisplay/contentcards">View Components</a
             >
         </div>
