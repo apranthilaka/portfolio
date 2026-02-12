@@ -32,7 +32,7 @@
         { path: '/designsystems/dstwo', name: 'Design System Bravo' },
     ];
 
-    let figmaDesigns = [{ path: '/figma/figmacards', name: 'Figma Cards' }];
+    let figmaDesigns = [{ path: '/figma/figmacards', name: 'Data Display' }];
     console.log(page.url.pathname);
 </script>
 
@@ -52,7 +52,7 @@
     <div class=" overflow-y-auto modern-scrollbar">
         <!-- Figma Designs  -->
         <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
-            Figma - Data Display
+            Figma Designs
         </div>
         <ul class="px-2">
             {#each figmaDesigns as menu}
