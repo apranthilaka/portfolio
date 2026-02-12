@@ -50,8 +50,30 @@
         </div>
     </div>
     <div class=" overflow-y-auto modern-scrollbar">
+        <!-- Figma Designs  -->
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+            Figma Designs
+        </div>
+        <ul class="px-2">
+            {#each figmaDesigns as menu}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            {
+                                'bg-gray-100 text-gray-950':
+                                    page.url.pathname === menu.path,
+                            },
+                        ]}
+                        href={menu.path}>{menu.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- Form inputs  -->
+
         <!-- Data display  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
             Data Display
         </div>
         <ul class="px-2">
@@ -159,28 +181,6 @@
             {/each}
         </ul>
         <!-- Designs systems  -->
-
-        <!-- Figma Designs  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
-            Figma Designs
-        </div>
-        <ul class="px-2">
-            {#each figmaDesigns as menu}
-                <li>
-                    <a
-                        class={[
-                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
-                            {
-                                'bg-gray-100 text-gray-950':
-                                    page.url.pathname === menu.path,
-                            },
-                        ]}
-                        href={menu.path}>{menu.name}</a
-                    >
-                </li>
-            {/each}
-        </ul>
-        <!-- Form inputs  -->
     </div>
 </div>
 
