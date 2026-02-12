@@ -52,7 +52,7 @@
     <div class=" overflow-y-auto modern-scrollbar">
         <!-- Figma Designs  -->
         <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
-            Figma Designs
+            Figma - Data Display
         </div>
         <ul class="px-2">
             {#each figmaDesigns as menu}
