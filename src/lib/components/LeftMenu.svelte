@@ -51,7 +51,7 @@
     </div>
     <div class=" overflow-y-auto modern-scrollbar">
         <!-- Figma Designs  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
             Figma Designs
         </div>
         <ul class="px-2">
@@ -117,7 +117,7 @@
         <!-- Form inputs  -->
 
         <!-- branding  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
             Branding
         </div>
         <ul class="px-2">
@@ -139,7 +139,7 @@
         <!-- branding  -->
 
         <!-- Data visualisation  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
+        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
             Data visualisation
         </div>
         <ul class="px-2">
