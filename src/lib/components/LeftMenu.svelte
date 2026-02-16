@@ -43,7 +43,7 @@
         <span
             class="text-gray-950 font-medium mr-3 text-sm flex flex-row justify-start items-center w-full"
         >
-            <a href="/"> APR Designs</a>
+            <a href="/"> /APR Designs</a>
         </span>
         <div>
             <!-- <i class="ph ph-x"></i> -->
