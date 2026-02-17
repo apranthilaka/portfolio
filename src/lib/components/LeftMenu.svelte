@@ -5,7 +5,7 @@
         { path: '/datadisplay/contentcards', name: 'Content cards' },
         { path: '/datadisplay/productcards', name: 'Product cards' },
         { path: '/datadisplay/userprofilecards', name: 'Profile cards' },
-        { path: '/datadisplay/dashboardelementcards', name: 'Dashboard cards' },
+        { path: '/datadisplay/dashboardcards', name: 'Dashboard cards' },
     ];
 
     let formAndInputs = [
@@ -32,8 +32,10 @@
         { path: '/designsystems/dstwo', name: 'Design System Bravo' },
     ];
 
-    let figmaDesigns = [{ path: '/figma/figmacards', name: 'Data Display' }];
-    console.log(page.url.pathname);
+    let figmaDesigns = [
+        { path: '/figma/figmadatadisplay', name: 'Data Display' },
+        { path: '/figma/figmaformandinputs', name: 'Form & Input' },
+    ];
 </script>
 
 <div class="left-menu border-r border-gray-200 w-[230px] flex flex-col">

@@ -1,10 +1,11 @@
 <script>
+    let { title = 'Top Menu Title' } = $props();
 </script>
 
 <div
     class="top-menu border-b border-gray-200 flex justify-start items-center px-6 h-14 text-sm"
 >
-    top menu
+    {title}
 </div>
 
 <style>

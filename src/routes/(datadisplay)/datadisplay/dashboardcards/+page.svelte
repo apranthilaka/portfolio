@@ -1,6 +1,5 @@
 <script>
     // In Svelte 5, we get data from the $props rune
-    let { data } = $props();
 
     // We can make the books reactive using the $state rune
     // let bookList = $state(data.books);
