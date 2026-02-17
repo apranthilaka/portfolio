@@ -117,7 +117,7 @@
         <!-- Form inputs  -->
 
         <!-- branding  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+        <!-- <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
             Branding
         </div>
         <ul class="px-2">
@@ -135,11 +135,11 @@
                     >
                 </li>
             {/each}
-        </ul>
+        </ul> -->
         <!-- branding  -->
 
         <!-- Data visualisation  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+        <!-- <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
             Data visualisation
         </div>
         <ul class="px-2">
@@ -157,12 +157,12 @@
                     >
                 </li>
             {/each}
-        </ul>
+        </ul> -->
         <!-- Data visualisation   -->
 
         <!-- Design systems  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
-            Forms and Inputs
+        <!-- <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+            Design Systems
         </div>
         <ul class="px-2">
             {#each designSystems as menuItem}
@@ -179,7 +179,7 @@
                     >
                 </li>
             {/each}
-        </ul>
+        </ul> -->
         <!-- Designs systems  -->
     </div>
 </div>
