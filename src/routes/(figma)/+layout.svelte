@@ -8,7 +8,7 @@
 </script>
 
 <div class="main-wrapper h-screen w-screen">
-    <TopMenu />
+    <!-- <TopMenu /> -->
     <LeftMenu />
 
     <div class="content-area bg-slate-50">
@@ -29,7 +29,7 @@
 
     .content-area {
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 1/3;
         display: grid; /* Changed to grid for easier positioning */
         overflow-y: auto;
         /* padding-bottom: 24px; */

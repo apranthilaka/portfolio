@@ -2,11 +2,11 @@
     <div class="font-medium text-gray-800">Loading...</div>
     <div class="absolute left-0 top-0 self-center w-full h-full">
         <iframe
-            title=""
-            style="border: none"
+            style="border: 1px solid #F3F4F6"
             width="100%"
             height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/Design-1---Card-Designs?page-id=0%3A1&node-id=1-463&p=f&viewport=574%2C548%2C0.18&scaling=contain&content-scaling=responsive&embed-host=share&hide-ui=1"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/01.-Data-Display?page-id=0%3A1&node-id=15-2208&p=f&viewport=557%2C503%2C0.15&scaling=min-zoom&content-scaling=responsive&starting-point-node-id=15%3A2208&embed-host=share "
+            allowfullscreen
         ></iframe>
     </div>
 </div>
