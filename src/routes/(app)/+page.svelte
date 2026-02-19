@@ -35,7 +35,7 @@
         >
             <a
                 class="border bg-gray-950 text-white px-5 h-10 flex items-center justify-center rounded-full"
-                href="../figma/figmadatadisplay">View Components</a
+                href="../figma/figmadatadisplay&tab=content">View Components</a
             >
         </div>
     </div>
