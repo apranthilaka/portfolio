@@ -6,14 +6,14 @@
     // let bookList = $state(data.books);
 </script>
 
-<div class="p-6 font-medium flex flex-row justify-between">
+<!-- <div class="p-6 font-medium flex flex-row justify-between">
     <div>Cards</div>
     <div>
         <a href="">Figma</a>
     </div>
-</div>
+</div> -->
 
-<div class="card-container-1 px-6 gap-6">
+<div class="card-container-1 px-6 pt-6 gap-6">
     <!-- card one  -->
     <div
         class="border border-gray-200 rounded-md h-200 shadow-sm hover:shadow-md transition-all delay-75 flex flex-col bg-white"
@@ -160,7 +160,7 @@
     <!-- card one  -->
 
     <!-- card two  -->
-    <div class="flex flex-col h-[800px] gap-4 bg-white">
+    <div class="flex flex-col h-200 gap-4 bg-white">
         <div
             class="grow flex flex-col border border-gray-200 overflow-hidden border-border-gray-200 rounded-md shadow-sm hover:shadow-md"
         >
@@ -394,7 +394,7 @@
     <!-- card one  -->
 
     <!-- card two  -->
-    <div class="flex flex-col h-[800px] gap-4 bg-white">
+    <div class="flex flex-col h-200 gap-4 bg-white">
         <div
             class="grow flex flex-col border border-gray-200 overflow-hidden border-border-gray-200 rounded-md shadow-sm hover:shadow-md"
         >
@@ -628,7 +628,7 @@
     <!-- card one  -->
 
     <!-- card two  -->
-    <div class="flex flex-col h-[800px] gap-4 bg-white">
+    <div class="flex flex-col h-200 gap-4 bg-white">
         <div
             class="grow flex flex-col border border-gray-200 overflow-hidden border-border-gray-200 rounded-md shadow-sm hover:shadow-md"
         >
