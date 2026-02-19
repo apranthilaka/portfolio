@@ -1,11 +1,17 @@
 <script>
     import { page } from '$app/state';
+    let figmaDesigns = [
+        { path: '/figma/figmadatadisplay?tab=content', name: 'Data Display' },
+        { path: '/figma/figmaformandinputs', name: 'Form & Input' },
+    ];
+
     let dataDisplay = [
         // { path: '/cards', name: 'Cards' },
         { path: '/datadisplay/contentcards', name: 'Content cards' },
-        { path: '/datadisplay/productcards', name: 'Product cards' },
-        { path: '/datadisplay/userprofilecards', name: 'Profile cards' },
-        { path: '/datadisplay/dashboardcards', name: 'Dashboard cards' },
+        { path: '/datadisplay/minimalcards', name: 'Minimal cards' },
+        // { path: '/datadisplay/productcards', name: 'Product cards' },
+        // { path: '/datadisplay/userprofilecards', name: 'Profile cards' },
+        // { path: '/datadisplay/dashboardcards', name: 'Dashboard cards' },
     ];
 
     let formAndInputs = [
@@ -30,11 +36,6 @@
     let designSystems = [
         { path: '/designsystems/dsone', name: 'Design System Alpha' },
         { path: '/designsystems/dstwo', name: 'Design System Bravo' },
-    ];
-
-    let figmaDesigns = [
-        { path: '/figma/figmadatadisplay', name: 'Data Display' },
-        { path: '/figma/figmaformandinputs', name: 'Form & Input' },
     ];
 </script>
 
@@ -64,7 +65,8 @@
                             ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
                             {
                                 'bg-gray-100 text-gray-950':
-                                    page.url.pathname === menu.path,
+                                    page.url.pathname + page.url.search ===
+                                    menu.path,
                             },
                         ]}
                         href={menu.path}>{menu.name}</a
