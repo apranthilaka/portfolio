@@ -45,7 +45,7 @@
                 style="border: 1px solid #F3F4F6"
                 width="100%"
                 height="100%"
-                src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/01.-Data-Display?page-id=0%3A1&node-id=15-2208&p=f&viewport=557%2C503%2C0.15&scaling=min-zoom&content-scaling=responsive&starting-point-node-id=15%3A2208&embed-host=share "
+                src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/01.-Data-Display?page-id=0%3A1&node-id=15-2208&p=f&viewport=557%2C503%2C0.15&scaling=min-zoom&content-scaling=responsive&starting-point-node-id=15%3A2208&embed-host=share&hide-ui=1 "
                 allowfullscreen
             ></iframe>
         </div>
@@ -55,10 +55,10 @@
         <div class="font-medium text-gray-800">Loading...</div>
         <div class="absolute left-0 top-0 self-center w-full h-full">
             <iframe
-                style="border: 1px solid #F3F4F6"
+                style="border: 1px solid rgba(0, 0, 0, 0.1);"
                 width="100%"
                 height="100%"
-                src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/01.-Data-Display?page-id=0%3A1&node-id=15-2208&p=f&viewport=557%2C503%2C0.15&scaling=min-zoom&content-scaling=responsive&starting-point-node-id=15%3A2208&embed-host=share "
+                src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/01.-Data-Display?page-id=236%3A1294&node-id=236-1322&p=f&viewport=756%2C615%2C0.19&scaling=contain&content-scaling=responsive&starting-point-node-id=236%3A1322&embed-host=share&hide-ui=1"
                 allowfullscreen
             ></iframe>
         </div>
