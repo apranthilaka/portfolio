@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/state';
     let figmaDesigns = [
-        { path: '/figma/figmadatadisplay?tab=content', name: 'Data Display' },
+        { path: '/figma/figmadatadisplay', name: 'Data Display' },
         { path: '/figma/figmaformandinputs', name: 'Form & Input' },
     ];
 
@@ -43,14 +43,19 @@
     <div
         class=" px-6 border-b border-gray-200 min-h-14 flex items-center justify-between"
     >
-        <span
+        <a
+            href="/"
             class="text-gray-950 font-medium mr-3 text-sm flex flex-row justify-start items-center w-full"
         >
-            <a href="/"> /APR Designs</a>
-        </span>
-        <div>
-            <!-- <i class="ph ph-x"></i> -->
-        </div>
+            <div class=" w-7 h-auto mr-1">
+                <img
+                    class="w-full h-full object-cover"
+                    src="/logo.png"
+                    alt="Logo"
+                />
+            </div>
+            <div>/ APR Designs</div>
+        </a>
     </div>
     <div class=" overflow-y-auto modern-scrollbar">
         <!-- Figma Designs  -->
