@@ -41,7 +41,7 @@
 
 <div class="left-menu border-r border-gray-200 w-[230px] flex flex-col">
     <div
-        class=" px-6 border-b border-gray-200 min-h-14 flex items-center justify-between"
+        class=" px-4 border-b border-gray-200 min-h-14 flex items-center justify-between"
     >
         <a
             href="/"
@@ -59,7 +59,7 @@
     </div>
     <div class=" overflow-y-auto modern-scrollbar">
         <!-- Figma Designs  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center">
+        <div class="px-4 h-9 text-xs text-gray-950 flex items-center">
             Figma - Primary Designs
         </div>
         <ul class="px-2">
@@ -67,9 +67,10 @@
                 <li>
                     <a
                         class={[
-                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-100    transition-all delay-75  text-sm mb-[2px] ',
+
                             {
-                                'bg-gray-100 text-gray-950':
+                                'bg-gray-100 text-gray-950 font-medium  dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
                                     page.url.pathname + page.url.search ===
                                     menu.path,
                             },
@@ -82,7 +83,7 @@
         <!-- Form inputs  -->
 
         <!-- Data display  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+        <div class="px-3 h-9 text-xs text-gray-950 flex items-center mt-4">
             HTML - Data Display
         </div>
         <ul class="px-2">
@@ -92,7 +93,7 @@
                         class={[
                             ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-100    transition-all delay-75  text-sm mb-[2px] ',
                             {
-                                'bg-gray-100 text-gray-950  dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
+                                'bg-gray-100 text-gray-950 font-medium  dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
                                     page.url.pathname === menuItem.path,
                             },
                         ]}
@@ -104,7 +105,7 @@
         <!-- Data display  -->
 
         <!-- Form inputs  -->
-        <div class="px-3 h-9 text-xs text-gray-400 flex items-center mt-4">
+        <div class="px-3 h-9 text-xs text-gray-950 flex items-center mt-4">
             HTML - Forms and Inputs
         </div>
         <ul class="px-2">
@@ -112,9 +113,10 @@
                 <li>
                     <a
                         class={[
-                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-50  hover:border border-gray-200  transition-all delay-75  text-sm mb-[2px] ',
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-100    transition-all delay-75  text-sm mb-[2px] ',
+
                             {
-                                'bg-gray-100 text-gray-950':
+                                'bg-gray-100 text-gray-950 font-medium  dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 ':
                                     page.url.pathname === menuItem.path,
                             },
                         ]}
