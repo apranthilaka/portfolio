@@ -1,5 +1,10 @@
 <script>
     import { page } from '$app/state';
+    let projects = [
+        { path: '/projects/projectone', name: 'Project One' },
+        { path: '/projects/projecttwo', name: 'Project Two' },
+    ];
+
     let figmaDesigns = [
         { path: '/figma/figmadatadisplay', name: 'Data Display' },
         { path: '/figma/figmaformandinputs', name: 'Form & Input' },
@@ -58,8 +63,32 @@
         </a>
     </div>
     <div class=" overflow-y-auto modern-scrollbar">
+        <!-- project one  -->
+        <!-- <div class="px-4 h-9 text-xs text-gray-950 flex items-center">
+            Projects
+        </div> -->
+        <ul>
+            {#each projects as menu}
+                <li>
+                    <a
+                        class={[
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-100    transition-all delay-75  text-sm mb-[2px] ',
+
+                            {
+                                'bg-gray-100 text-gray-950  dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600  ':
+                                    page.url.pathname + page.url.search ===
+                                    menu.path,
+                            },
+                        ]}
+                        href={menu.path}>{menu.name}</a
+                    >
+                </li>
+            {/each}
+        </ul>
+        <!-- project one  -->
+
         <!-- Figma Designs  -->
-        <div class="px-4 h-9 text-xs text-gray-950 flex items-center">
+        <!-- <div class="px-4 h-9 text-xs text-gray-950 flex items-center">
             Figma - Primary Designs
         </div>
         <ul class="px-2">
@@ -79,11 +108,11 @@
                     >
                 </li>
             {/each}
-        </ul>
+        </ul> -->
         <!-- Form inputs  -->
 
         <!-- Data display  -->
-        <div class="px-3 h-9 text-xs text-gray-950 flex items-center mt-4">
+        <!-- <div class="px-3 h-9 text-xs text-gray-950 flex items-center mt-4">
             HTML - Data Display
         </div>
         <ul class="px-2">
@@ -101,11 +130,11 @@
                     >
                 </li>
             {/each}
-        </ul>
+        </ul> -->
         <!-- Data display  -->
 
         <!-- Form inputs  -->
-        <div class="px-3 h-9 text-xs text-gray-950 flex items-center mt-4">
+        <!-- <div class="px-3 h-9 text-xs text-gray-950 flex items-center mt-4">
             HTML - Forms and Inputs
         </div>
         <ul class="px-2">
@@ -124,7 +153,7 @@
                     >
                 </li>
             {/each}
-        </ul>
+        </ul> -->
         <!-- Form inputs  -->
 
         <!-- branding  -->
