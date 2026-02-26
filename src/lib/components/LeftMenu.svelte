@@ -1,8 +1,8 @@
 <script>
     import { page } from '$app/state';
     let projects = [
-        { path: '/projects/projectone', name: 'Project One' },
-        { path: '/projects/projecttwo', name: 'Project Two' },
+        { path: '/projects/projectone', name: 'Urban Pulse' },
+        { path: '/projects/projecttwo', name: 'Prism Logic' },
     ];
 
     let figmaDesigns = [
