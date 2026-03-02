@@ -14,34 +14,21 @@
         </div> -->
 
         <div class=" text-gray-800 mb-4">
-            <div class="font-semibold text-6xl mb-8">
+            <div class="font-semibold text-6xl mb-8 max-w-250">
                 Discover. Design. Deliver
                 <!-- Design & develop things that look great and scale even better. -->
             </div>
 
-            <div class="font-normal text-2xl mb-5">
-                Hey, I’m Aravinda! 👋
-                <br />
-                I’m a product designer based in sunny Sri Lanka. For the last 10
-                years, I’ve been busy building things that people actually use, from
-                complex SaaS and ERP systems to helping startups launch their very
-                first ideas. This site is my little corner of the internet for all
-                things design. I’m usually right here sharing my latest visual experiments
-                and product rants. <br /> <br />
-                Feel free to reach out: [LinkedIn] • [Twitter]
-                <!-- I build design systems and interfaces in Figma, specifically structured for a seamless
-                transition to code. By translating them into SvelteKit, I
-                deliver high-performance, browser-native prototypes that capture
-                the true look, feel, and interactivity of the final product. -->
+            <div class="font-normal text-2xl mb-5 max-w-250">
+                Hey, I’m Aravinda! 👋 I’m a product designer based in sunny Sri
+                Lanka.
+                <br /> <br />
+                For the last 10 years, I’ve been busy building things that people
+                actually use, from complex SaaS, ERP, B2B and B2C systems to helping
+                startups launch their very first ideas. This site is my little corner
+                of the internet for all things design. Here I’m sharing my latest
+                visual experiments and product ideas.
             </div>
-
-            <!-- <span class="font-normal text-2xl mb-5">
-                The proof is in the build: this entire portfolio is a live
-                demonstration of my stack, developed with <span
-                    class="font-medium">SvelteKit</span
-                >, hosted on <span class="font-medium">Cloudflare</span>, and
-                powered by <span class="font-medium">Supabase</span>.
-            </span> -->
         </div>
         <div class="card-container mt-10">
             <a href="./projects/projectone">Project 1 </a>
