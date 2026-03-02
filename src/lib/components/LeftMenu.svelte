@@ -62,7 +62,7 @@
             <div>/ APR Designs</div>
         </a>
     </div>
-    <div class=" overflow-y-auto modern-scrollbar">
+    <div class=" overflow-y-auto modern-scrollbar p-2">
         <!-- project one  -->
         <!-- <div class="px-4 h-9 text-xs text-gray-950 flex items-center">
             Projects
@@ -72,10 +72,10 @@
                 <li>
                     <a
                         class={[
-                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-100    transition-all delay-75  text-sm mb-[2px] ',
+                            ' text-gray-500 rounded-sm w-full px-4 h-9 flex items-center hover:bg-gray-950 hover:text-white    transition-all delay-75  text-sm mb-[2px] ',
 
                             {
-                                'bg-gray-100 text-gray-950  dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600  ':
+                                'bg-gray-950 text-white    ':
                                     page.url.pathname + page.url.search ===
                                     menu.path,
                             },
