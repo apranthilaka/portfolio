@@ -27,9 +27,7 @@
     >
         Figma Designs
     </div>
-    <div
-        class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-6 border border-gray-200 bg-gray-100"
-    >
+    <div class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-6 bg-gray-100">
         <iframe
             title="iframe"
             class="h-256"
@@ -40,29 +38,15 @@
             allowfullscreen
         ></iframe>
     </div>
-    <div
-        class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-6 border border-gray-200 bg-gray-100"
-    >
+
+    <div class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-6 bg-gray-100">
         <iframe
             title="iframe"
             class="h-256"
             style="border: none"
             width="100%"
             height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-915&viewport=-72%2C377%2C0.29&scaling=min-zoom&content-scaling=responsive&starting-point-node-id=15%3A2208&page-id=0%3A1&embed-host=share&hide-ui=1"
-            allowfullscreen
-        ></iframe>
-    </div>
-    <div
-        class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-6 border border-gray-200 bg-gray-100"
-    >
-        <iframe
-            title="iframe"
-            class="h-256"
-            style="border: none"
-            width="100%"
-            height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-463&viewport=-72%2C377%2C0.29&scaling=contain&content-scaling=responsive&starting-point-node-id=15%3A2208&page-id=0%3A1&embed-host=share&hide-ui=1"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-563&viewport=565%2C35%2C0.52&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share&hide-ui=1"
             allowfullscreen
         ></iframe>
     </div>
