@@ -1,7 +1,5 @@
-<div
-    class="w-full min-h-screen bg-cover bg-center"
-    style="background-image: url('/bg.png');"
->
+<!-- style="background-image: url('/bg.png');" -->
+<div class="w-full h-screen bg-cover bg-center">
     <div
         class="flex flex-col h-screen w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-6 pt-30"
     >
@@ -23,19 +21,34 @@
                 Hey, I’m Aravinda! 👋 I’m a product designer based in sunny Sri
                 Lanka.
                 <br /> <br />
-                For the last 10 years, I’ve been busy building things that people
-                actually use, from complex SaaS, ERP, B2B and B2C systems to helping
-                startups launch their very first ideas. This site is my little corner
-                of the internet for all things design. Here I’m sharing my latest
-                visual experiments and product ideas.
+                For over 15 years, I’ve been crafting products that solve real problems—from
+                scaling complex SaaS and ERP systems to launching day-one ideas for
+                startups. This is my little corner of the web for all things design.
+                Take a look around at my latest work, visual experiments, and a few
+                product ideas I'm currently tinkering with.
             </div>
         </div>
         <div class="card-container mt-10">
+            <a
+                class="flex flex-col justify-start items-start bg-white hover:bg-blue-50 hover:border-gray-500 hover:cursor-pointer rounded-2xl transition-all duration-300 p-6 w-full h-full max-w-1/2 px-12 border border-gray-300 hover:shadow-lg"
+                href="./projects/projectone"
+            >
+                <div class="w-full mb-3">
+                    <img src="/p1logo.png" alt="" />
+                </div>
+                <span class="text-4xl font-semibold w-full mt-3 mb-2"
+                    >Talent Scout</span
+                >
+                <span class="text-xl w-full text-gray-600"
+                    >Revamping the onboarding journey for a visually immersive
+                    and engaging experience.</span
+                >
+            </a>
+
+            <!-- <a href="./projects/projectone">Project 1 </a>
             <a href="./projects/projectone">Project 1 </a>
             <a href="./projects/projectone">Project 1 </a>
-            <a href="./projects/projectone">Project 1 </a>
-            <a href="./projects/projectone">Project 1 </a>
-            <a href="./projects/projectone">Project 1 </a>
+            <a href="./projects/projectone">Project 1 </a> -->
         </div>
     </div>
 </div>
@@ -45,6 +58,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
         grid-template-rows: auto;
+        gap: 24px;
 
         a {
             display: flex;
