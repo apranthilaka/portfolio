@@ -10,7 +10,7 @@
             engaging experience
         </div>
         <div
-            class="text-xl text-align-left w-full max-w-4xl text-gray-800 leading-7"
+            class="text-xl text-align-left w-full max-w-4xl text-gray-800 leading-7 mb-6"
         >
             Talent Scout is an AI-powered recruitment platform that helps
             companies find and hire top talent quickly and efficiently by
