@@ -18,8 +18,11 @@
     </div>
 
     <div class="flex flex-row gap-4">
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <!-- <a href="">About</a> -->
+        <a
+            class=" font-normal border border-gray-200 h-8 px-6 flex items-center justify-center rounded-full text-sm text-gray-500 hover:bg-gray-100 transition-colors duration-200 hover:border-gray-300"
+            href="mailto:apranthilaka@outlook.com">Contact</a
+        >
     </div>
 </div>
 
