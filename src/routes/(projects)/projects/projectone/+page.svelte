@@ -74,6 +74,18 @@
             allowfullscreen
         ></iframe>
     </div>
+
+    <div class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-20 bg-gray-100">
+        <iframe
+            title="iframe"
+            class="h-256"
+            style="border: none"
+            width="100%"
+            height="100%"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-694&viewport=-121%2C-273%2C0.48&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share&hide-ui=1"
+            allowfullscreen
+        ></iframe>
+    </div>
 </div>
 
 <style>
