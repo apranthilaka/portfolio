@@ -1,7 +1,9 @@
-<div class="flex flex-col modern-scrollbar overflow-y-auto">
+<!-- sm:w-160 md:w-3xl lg:w-400 -->
+
+<div class="flex flex-col modern-scrollbar overflow-y-auto p-6">
     <!-- project info  -->
     <div
-        class="p-6 lg:p-0 min-h-105 shrink-0 w-full sm:w-160 md:w-3xl lg:w-360 flex flex-col gap-4 items-start justify-center mx-auto"
+        class=" min-h-105 max-w-[1440px] shrink-0 w-full flex flex-col gap-4 items-start justify-center mx-auto"
     >
         <div
             class="text-4xl leading-11 font-semibold text-gray-800 mb-4 text-align-left w-full max-w-4xl"
@@ -37,12 +39,10 @@
     >
         Figma Designs
     </div> -->
-    <div
-        class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-20 bg-gray-100 p-6 lg:p-0 rounded-lg overflow-hidden"
-    >
+    <div class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden">
         <iframe
             title="iframe"
-            class="h-256"
+            class="min-h-300"
             style="border: none"
             width="100%"
             height="100%"
@@ -50,11 +50,22 @@
             allowfullscreen
         ></iframe>
     </div>
-
-    <div class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-20 bg-gray-100">
+    <div class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden">
         <iframe
             title="iframe"
-            class="h-256"
+            class="h-300"
+            style="border: none"
+            width="100%"
+            height="100%"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-694&viewport=-121%2C-273%2C0.48&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share&hide-ui=1"
+            allowfullscreen
+        ></iframe>
+    </div>
+
+    <div class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden">
+        <iframe
+            title="iframe"
+            class="h-300"
             style="border: none"
             width="100%"
             height="100%"
@@ -63,10 +74,10 @@
         ></iframe>
     </div>
 
-    <div class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-20 bg-gray-100">
+    <div class="w-full mx-auto bg-gray-100 rounded-lg overflow-hidden">
         <iframe
             title="iframe"
-            class="h-256"
+            class="h-300"
             style="border: none"
             width="100%"
             height="100%"
@@ -74,26 +85,14 @@
             allowfullscreen
         ></iframe>
     </div>
-
-    <div class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-20 bg-gray-100">
-        <iframe
-            title="iframe"
-            class="h-256"
-            style="border: none"
-            width="100%"
-            height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-694&viewport=-121%2C-273%2C0.48&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share&hide-ui=1"
-            allowfullscreen
-        ></iframe>
-    </div>
 </div>
 
 <style>
-    .card-container-1 {
+    /* .card-container-1 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
         grid-template-rows: 800px;
-    }
+    } */
 
     .modern-scrollbar {
         scrollbar-width: thin;
