@@ -4,7 +4,7 @@
     <div class="  min-h-14 flex items-center justify-between">
         <a
             href="/"
-            class="text-gray-950 font-medium mr-3 text-sm flex flex-row justify-start items-center w-full"
+            class=" font-semibold border border-gray-300 h-8 px-6 flex items-center justify-center rounded-full text-sm text-gray-800 hover:bg-gray-100 transition-all duration-300 hover:border-gray-500"
         >
             <div class=" w-7 h-auto mr-1">
                 <img
