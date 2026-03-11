@@ -62,9 +62,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="hidden text-sm text-gray-800 group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
             <div
@@ -84,9 +84,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="hidden text-sm text-gray-800 group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
             <div
@@ -106,9 +106,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="hidden text-sm text-gray-800 group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
             <div
@@ -128,9 +128,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="hidden text-sm text-gray-800 group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
             <div
@@ -150,9 +150,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="hidden text-sm text-gray-800 group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
             <div
@@ -172,9 +172,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="hidden text-sm text-gray-800 group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
             <div
@@ -194,9 +194,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="hidden text-sm text-gray-800 group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
             <div
@@ -216,9 +216,9 @@
                 </a>
 
                 <div
-                    class="hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
+                    class="text-sm text-gray-800 hidden group-hover:flex w-full h-full justify-center items-center hover:cursor-not-allowed"
                 >
-                    Work In Progress
+                    Work In Progress...
                 </div>
             </div>
         </div>
