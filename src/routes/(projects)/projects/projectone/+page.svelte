@@ -33,12 +33,7 @@
             </div>
         </div>
     </div>
-    <!-- project info  -->
-    <!-- <div
-        class="w-full sm:w-160 md:w-3xl lg:w-360 mx-auto mb-6 text-sm text-gray-400 p-6 lg:p-0"
-    >
-        Figma Designs
-    </div> -->
+
     <div class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden">
         <iframe
             title="iframe"
