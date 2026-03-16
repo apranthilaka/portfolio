@@ -34,61 +34,22 @@
         </div>
     </div>
 
-    <div class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden">
+    <div
+        class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden border border-gray-200"
+    >
         <iframe
             title="iframe"
-            class="min-h-300"
+            class="h-270 w-full"
             style="border: none"
             width="100%"
             height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-463&viewport=-72%2C377%2C0.29&scaling=contain&content-scaling=responsive&starting-point-node-id=15%3A2208&page-id=0%3A1&embed-host=share&hide-ui=1"
-            allowfullscreen
-        ></iframe>
-    </div>
-    <div class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden">
-        <iframe
-            title="iframe"
-            class="h-300"
-            style="border: none"
-            width="100%"
-            height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-694&viewport=-121%2C-273%2C0.48&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share&hide-ui=1"
-            allowfullscreen
-        ></iframe>
-    </div>
-
-    <div class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden">
-        <iframe
-            title="iframe"
-            class="h-300"
-            style="border: none"
-            width="100%"
-            height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-287&viewport=-230%2C350%2C0.59&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share&hide-ui=1"
-            allowfullscreen
-        ></iframe>
-    </div>
-
-    <div class="w-full mx-auto bg-gray-100 rounded-lg overflow-hidden">
-        <iframe
-            title="iframe"
-            class="h-300"
-            style="border: none"
-            width="100%"
-            height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1---Project-One?node-id=1-563&viewport=354%2C-542%2C0.83&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share&hide-ui=1"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1--Talent-Scout?page-id=0%3A1&node-id=1-694&p=f&viewport=419%2C335%2C0.41&scaling=contain&content-scaling=responsive&embed-host=share"
             allowfullscreen
         ></iframe>
     </div>
 </div>
 
 <style>
-    /* .card-container-1 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-        grid-template-rows: 800px;
-    } */
-
     .modern-scrollbar {
         scrollbar-width: thin;
         scrollbar-color: #d1d5db transparent; /* thumb | track */
