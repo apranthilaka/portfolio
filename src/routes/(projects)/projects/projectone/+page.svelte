@@ -1,9 +1,9 @@
 <!-- sm:w-160 md:w-3xl lg:w-400 -->
 
-<div class="flex flex-col modern-scrollbar overflow-y-auto p-6">
+<div class="flex flex-col modern-scrollbar overflow-y-auto">
     <!-- project info  -->
     <div
-        class=" min-h-105 max-w-[1440px] shrink-0 w-full flex flex-col gap-4 items-start justify-center mx-auto"
+        class=" text-gray-800 max-w-[1440px] h-[400px] overflow-hidden shrink-0 w-full mx-auto pt-20"
     >
         <div
             class="text-4xl leading-11 font-semibold text-gray-800 mb-4 text-align-left w-full max-w-4xl"
@@ -20,7 +20,7 @@
             decision-making. My focus as a Product Designer was to craft a
             seamless onboarding experience tailored for hiring teams.
         </div>
-        <div class="flex gap-1">
+        <!-- <div class="flex gap-1">
             <div
                 class="border border-gray-300 px-4 h-9 rounded-full text-sm flex items-center justify-center"
             >
@@ -31,15 +31,14 @@
             >
                 Startup Project
             </div>
-        </div>
+        </div> -->
     </div>
+    <!-- project info  -->
 
-    <div
-        class="w-full mx-auto mb-6 bg-gray-100 rounded-lg overflow-hidden border border-gray-200"
-    >
+    <div class="w-full mx-auto bg-gray-100 overflow-hidden border-gray-200">
         <iframe
             title="iframe"
-            class="h-270 w-full"
+            class="h-[calc(100vh-57px)] w-full"
             style="border: none"
             width="100%"
             height="100%"
