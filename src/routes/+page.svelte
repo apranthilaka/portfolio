@@ -61,7 +61,7 @@
 
 <!-- style="background-image: url('/bg.png');" bg-cover bg-center -->
 <div class="w-full h-screen">
-    <div class="flex flex-col w-full sm:w-160 md:w-3xl lg:w-360 mx-auto pb-6">
+    <div class="flex flex-col w-full sm:w-160 md:w-3xl lg:w-360 mx-auto p-6">
         <!-- header  -->
         <div
             class="  text-gray-800 max-w-[1440px] h-[400px] overflow-hidden shrink-0 w-full mx-auto mt-[56px] pt-20"
@@ -83,7 +83,7 @@
             </div>
         </div>
         <!-- header  -->
-        <div class="card-container">
+        <div class="card-container mt-6">
             {#each projects as project}
                 <div
                     class="group relative flex flex-col border border-gray-300 h-48 rounded-lg overflow-hidden transition-all justify-center items-center {project.isActive
