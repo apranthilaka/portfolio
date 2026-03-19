@@ -28,18 +28,6 @@
                 decision-making. My focus as a Product Designer was to craft a
                 seamless onboarding experience tailored for hiring teams.
             </div>
-            <!-- <div class="flex gap-1">
-            <div
-                class="border border-gray-300 px-4 h-9 rounded-full text-sm flex items-center justify-center"
-            >
-                Talent Scout
-            </div>
-            <div
-                class="border border-gray-300 px-4 h-9 rounded-full text-sm flex items-center justify-center"
-            >
-                Startup Project
-            </div>
-        </div> -->
         </div>
     {:else}
         <div></div>
