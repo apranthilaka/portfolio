@@ -5,14 +5,14 @@
 
 <div class="flex flex-raw modern-scrollbar overflow-y-auto">
     <button
-        class=" absolute left-[190px] top-[13px] z-[1000] border border-transparent hover:border-gray-300 font-semibold border border-transparent hover:border-gray-300 h-8 px-4 flex items-center justify-center rounded-full text-sm text-gray-800 hover:bg-gray-100 transition-all duration-300 hover:cursor-pointer"
+        class=" absolute left-47.5top-3.25 z-1000 border border-transparent hover:border-gray-300 font-semibold h-8 px-4 flex items-center justify-center rounded-full text-sm text-gray-800 hover:bg-gray-100 transition-all duration-300 hover:cursor-pointer"
         on:click={() => (iframeLoaded = !iframeLoaded)}
     >
         {iframeLoaded ? 'Hide Project Info' : 'Show Project Info'}
     </button>
     <!-- project info  -->
     {#if iframeLoaded}
-        <div class=" w-75 overflow-hidden shrink-0 p-6 shadow-xl z-[999]">
+        <div class=" w-75 overflow-hidden shrink-0 p-6 shadow-xl z-999">
             <div
                 class="text-xl font-semibold text-gray-950 mb-4 text-align-left w-full"
             >
