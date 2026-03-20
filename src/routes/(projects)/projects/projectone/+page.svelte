@@ -5,14 +5,14 @@
 
 <div class="flex flex-raw modern-scrollbar overflow-y-auto">
     <button
-        class=" absolute left-47.5 top-3.25 z-1000 border border-transparent hover:border-gray-300 font-semibold h-8 px-4 flex items-center justify-center rounded-full text-sm text-gray-800 hover:bg-gray-100 transition-all duration-300 hover:cursor-pointer"
+        class="absolute left-47.5 top-3.25 z-1000 border border-gray-200 hover:border-gray-300 h-8 px-4 flex items-center justify-center rounded-full text-sm text-gray-800 hover:bg-gray-100 transition-all duration-300 hover:cursor-pointer"
         on:click={() => (iframeLoaded = !iframeLoaded)}
     >
         {iframeLoaded ? 'Hide Project Info' : 'Show Project Info'}
     </button>
     <!-- project info  -->
     {#if iframeLoaded}
-        <div class=" w-75 overflow-hidden shrink-0 p-6 shadow-xl z-999">
+        <div class=" w-[355px] overflow-hidden shrink-0 p-6 shadow-xl z-999">
             <div
                 class="text-xl font-semibold text-gray-950 mb-4 text-align-left w-full"
             >
@@ -28,6 +28,23 @@
                 decision-making. My focus as a Product Designer was to craft a
                 seamless onboarding experience tailored for hiring teams.
             </div>
+            <div>
+                <p class="text-sm">
+                    Optimal experience, use a <span
+                        class="font-semibold text-black">2K resolution</span
+                    > display or above.
+                </p>
+                <!-- <p class="mt-4 text-sm">
+                    Press <kbd
+                        class="px-2 py-1 font-semibold bg-gray-100 border rounded text-sm"
+                        >Z</kbd
+                    >
+                    to toggle viewport scaling.
+                </p> -->
+                <p class="mt-4 text-sm">
+                    Full-screen mode is recommended for this design.
+                </p>
+            </div>
         </div>
     {:else}
         <div></div>
@@ -41,13 +58,33 @@
             Loading...
         </div>
 
+        <!-- <iframe
+            title="iframe"
+            class="h-[calc(100vh-58px)] w-full p-0 m-0 relative"
+            style="border: none"
+            width="100%"
+            height="100%"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1--Talent-Scout?page-id=0%3A1&node-id=1-287&p=f&viewport=391%2C205%2C0.37&scaling=responsive&content-scaling=fixed&embed-host=share&hide-ui=1"
+            allowfullscreen
+        ></iframe> -->
+
+        <!-- <iframe
+            title="iframe"
+            class="h-[calc(100vh-58px)] w-full p-0 m-0 relative"
+            style="border: none"
+            width="100%"
+            height="100%"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1--Talent-Scout?node-id=1-463&viewport=689%2C-159%2C0.43&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+            allowfullscreen
+        ></iframe> -->
+
         <iframe
             title="iframe"
             class="h-[calc(100vh-58px)] w-full p-0 m-0 relative"
             style="border: none"
             width="100%"
             height="100%"
-            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1--Talent-Scout?page-id=0%3A1&node-id=1-287&p=f&viewport=391%2C205%2C0.37&scaling=scale-down-width&content-scaling=fixed&embed-host=share"
+            src="https://embed.figma.com/proto/DzRSIl93px9xqQg95BTTMM/P1--Talent-Scout?node-id=1-463&viewport=689%2C-159%2C0.43&scaling=contain&content-scaling=responsive&page-id=0%3A1&embed-host=share"
             allowfullscreen
         ></iframe>
     </div>
