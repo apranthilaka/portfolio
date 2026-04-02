@@ -93,7 +93,7 @@
                         >
                             <i class="ph-fill ph-circle text-green-600 text-xs"
                             ></i>
-                            <div class="mb-[2px]">Available</div>
+                            <div class="mb-0.5">Available</div>
                         </div>
                     </div>
                 </div>

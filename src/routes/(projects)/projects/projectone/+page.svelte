@@ -12,7 +12,7 @@
     </button>
     <!-- project info  -->
     {#if iframeLoaded}
-        <div class=" w-[355px] overflow-hidden shrink-0 p-6 shadow-xl z-999">
+        <div class=" w-88.75 overflow-hidden shrink-0 p-6 shadow-xl z-999">
             <div
                 class="text-xl font-semibold text-gray-950 mb-4 text-align-left w-full"
             >
