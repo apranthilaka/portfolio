@@ -1,4 +1,7 @@
 <script>
+    import ProjectOne from '$lib/cover-components/ProjectOne.svelte';
+    import ProjectTwo from '$lib/cover-components/ProjectTwo.svelte';
+
     // 1. Define reactive states using runes
     let currentTime = $state('');
     let isWarningVisible = $state(true);
@@ -180,37 +183,13 @@
     <!-- info  -->
 
     <!-- project 01  -->
-    <a
-        href="https://www.figma.com/proto/DzRSIl93px9xqQg95BTTMM/001---2026---Vectra---UK?node-id=3696-1796&p=f&viewport=520%2C225%2C0.24&t=yPvfobxqiYpvnHpb-8&scaling=contain&content-scaling=responsive&starting-point-node-id=3696%3A1796&page-id=0%3A1&hide-ui=1"
-        target="_blank"
-        rel="noopener"
-        class="block aspect-square shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
-    >
-        <img
-            src="/project-covers/001 - 2026 - Vectra - UK.png"
-            loading="lazy"
-            decoding="async"
-            alt="Fecta Project Preview"
-            class="w-full h-full object-cover"
-        />
-    </a>
+    <ProjectOne />
+
     <!-- project 01  -->
 
     <!-- project 02  -->
-    <a
-        href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=lVTRMTtXd5SR2Yl2-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
-        target="_blank"
-        rel="noopener"
-        class="block aspect-square shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
-    >
-        <img
-            src="/project-covers/002 - 2026 - Crest Analytics.png"
-            loading="lazy"
-            decoding="async"
-            alt="Fecta Project Preview"
-            class="w-full h-full object-cover"
-        />
-    </a>
+    <ProjectTwo />
+
     <!-- project 02  -->
 
     <!-- project 03  -->
