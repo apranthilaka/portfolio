@@ -39,7 +39,7 @@
 </script>
 
 <div
-    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit p-4 gap-4 box-border"
+    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit p-4 gap-4 box-border bg-neutral-200"
 >
     <!-- info  -->
     <div
@@ -62,7 +62,7 @@
                 >
                     <img
                         class="rounded-full border-white"
-                        src="/assets/1763549431722.jpg"
+                        src="/profile.jpg"
                         alt=""
                     />
                 </div>
@@ -92,14 +92,14 @@
                 </div>
                 <!-- date  -->
 
-                <!-- <div class="text-gray-900 text-normal md:text-lg">
+                <div class="text-gray-900 text-normal md:text-lg">
                     I’m Aravinda, a product designer located in Sri Lanka.
                     Partnering with companies to create digital interfaces that
                     play a crucial role in realising their objectives for future
                     success.
-                </div> -->
+                </div>
 
-                <div>
+                <!-- <div>
                     Hey, I’m Aravinda! 👋 I’m a product designer based in sunny
                     Sri Lanka. For over 15 years, I’ve been crafting products
                     that solve real problems—from scaling complex SaaS and ERP
@@ -107,7 +107,7 @@
                     little corner of the web for all things design. Take a look
                     around at my latest work, visual experiments, and a few
                     product ideas I'm currently tinkering with.
-                </div>
+                </div> -->
                 <!-- instructions  -->
                 <div class="text-sm">
                     Best viewed on 2K or larger displays. While fully
@@ -120,70 +120,52 @@
 
             <!-- contact  -->
             <div
-                class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] box-border h-fit gap-2"
+                class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] box-border h-fit gap-2"
             >
-                <div class="border border-collapse rounded-sm">
-                    <a
-                        href="mailto:apranthilaka@outlook.com"
-                        class="text-black flex justify-center items-center transition-colors duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                    >
-                        Send Email
-                    </a>
-                </div>
+                <a
+                    href="mailto:apranthilaka@outlook.com"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500 col-span-2"
+                >
+                    Send Email
+                </a>
+                <a
+                    target="_blank"
+                    href="https://t.me/apranthilaka"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                >
+                    Telegram
+                </a>
 
-                <div class="border border-collapse rounded-sm">
-                    <a
-                        target="_blank"
-                        href="https://t.me/apranthilaka"
-                        class="hover:bg-sky-100 hover:border-sky-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                    >
-                        <!-- <i class="ph ph-telegram-logo text-lg"></i> -->
-                        Telegram
-                    </a>
-                </div>
+                <a
+                    target="_blank"
+                    href="https://wa.me/94777499801"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                >
+                    Whatsapp
+                </a>
 
-                <div class="border border-collapse rounded-sm">
-                    <a
-                        target="_blank"
-                        href="https://wa.me/94777499801"
-                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                    >
-                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                        Whatsapp
-                    </a>
-                </div>
-                <div class="border border-collapse rounded-sm">
-                    <a
-                        target="_blank"
-                        href="https://wa.me/94777499801"
-                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                    >
-                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                        X (Twitter)
-                    </a>
-                </div>
+                <a
+                    href="https://dribbble.com/aravinda"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                >
+                    Dribbble
+                </a>
 
-                <div class="border border-collapse rounded-sm">
-                    <a
-                        target="_blank"
-                        href="https://wa.me/94777499801"
-                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                    >
-                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                        Linkedin
-                    </a>
-                </div>
+                <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/aravindaprabath/"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                >
+                    <div>Linkedin</div>
+                </a>
 
-                <div class="border border-collapse rounded-sm">
-                    <a
-                        target="_blank"
-                        href="https://wa.me/94777499801"
-                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                    >
-                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                        Dribbble
-                    </a>
-                </div>
+                <a
+                    target="_blank"
+                    href="https://x.com/apranthilaka"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                >
+                    X (Twitter)
+                </a>
             </div>
             <!-- contact  -->
         </div>
@@ -393,3 +375,67 @@
     </div>
     <!-- project 08  -->
 </div>
+
+<style>
+    .modern-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: #d1d5db transparent; /* thumb | track */
+    }
+
+    /* 2. Webkit approach (Chrome, Safari, Edge) */
+    .modern-scrollbar::-webkit-scrollbar {
+        width: 6px; /* Vertical width */
+        height: 6px; /* Horizontal height */
+    }
+
+    .modern-scrollbar::-webkit-scrollbar-track {
+        background: transparent; /* Makes the track invisible */
+    }
+
+    .modern-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #d1d5db; /* Light gray */
+        border-radius: 10px; /* Round edges */
+        border: 1px solid transparent; /* Acts as padding if track had color */
+    }
+
+    /* Hover effect */
+    .modern-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #9ca3af; /* Slightly darker gray */
+    }
+
+    /* 1. Define the custom property so CSS can animate the degree */
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    /* 2. Create the keyframes to rotate from 0 to 360 */
+    @keyframes rainbow-spin {
+        from {
+            --angle: 0deg;
+        }
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    /* 3. Update your class to use the animation */
+    .rainbow-border {
+        background:
+            padding-box linear-gradient(white, white),
+            border-box
+                conic-gradient(
+                    from var(--angle),
+                    #0d99ff,
+                    #874fff,
+                    #ff3737,
+                    #ff7237,
+                    #24cb71,
+                    #0d99ff
+                );
+        border: 5px solid transparent;
+        /* Apply the animation here */
+        animation: rainbow-spin 3s linear infinite;
+    }
+</style>
