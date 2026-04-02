@@ -83,7 +83,7 @@
                         </div>
 
                         <div
-                            class="text-gray-500 flex gap-1 flex justify-center items-center"
+                            class="text-gray-500 flex gap-1 justify-center items-center"
                         >
                             <i class="ph-fill ph-circle text-green-600"></i>
                             <div>Available</div>
@@ -294,7 +294,6 @@
 
     <!-- project 08  -->
     <div
-        href="https://www.google.com/"
         class="group relative aspect-square flex items-center justify-center gap-4 flex-col rounded-lg border-2 border-gray-500 border-dashed"
     >
         <div class="p-6 flex items-center justify-center flex-col gap-3">
