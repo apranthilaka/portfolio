@@ -92,11 +92,21 @@
                 </div>
                 <!-- date  -->
 
-                <div class="text-gray-900 text-normal md:text-lg">
+                <!-- <div class="text-gray-900 text-normal md:text-lg">
                     I’m Aravinda, a product designer located in Sri Lanka.
                     Partnering with companies to create digital interfaces that
                     play a crucial role in realising their objectives for future
                     success.
+                </div> -->
+
+                <div>
+                    Hey, I’m Aravinda! 👋 I’m a product designer based in sunny
+                    Sri Lanka. For over 15 years, I’ve been crafting products
+                    that solve real problems—from scaling complex SaaS and ERP
+                    systems to launching day-one ideas for startups. This is my
+                    little corner of the web for all things design. Take a look
+                    around at my latest work, visual experiments, and a few
+                    product ideas I'm currently tinkering with.
                 </div>
                 <!-- instructions  -->
                 <div class="text-sm">
