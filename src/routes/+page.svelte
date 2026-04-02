@@ -208,7 +208,7 @@
 
     <!-- project 03  -->
     <a
-        href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=lVTRMTtXd5SR2Yl2-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
+        href="https://www.figma.com/proto/QgADtZlvYTpiqw3344Ii1P/003---2026---Kinetix?node-id=1-301&p=f&viewport=25%2C390%2C0.5&t=5WHfjzYqO0tsu9bH-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A301&page-id=0%3A1&hide-ui=1"
         target="_blank"
         rel="noopener"
         class="block aspect-square"
