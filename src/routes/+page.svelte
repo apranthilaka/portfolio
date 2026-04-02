@@ -1,128 +1,385 @@
 <script>
-    let projects = [
-        {
-            name: 'Talent Scout',
-            description:
-                'Revamping the onboarding journey for a visually immersive and engaging experience.',
-            isActive: true,
-            url: 'projectone',
-        },
+    // 1. Create a reactive state for the time
+    let currentTime = $state('');
+    let isWarningVisible = $state(true);
+    let isWarningFaded = $state(false);
 
-        {
-            name: 'Equity Nexus',
-            description:
-                'Designing a robust cap table manager for a deeply secure and clear investor portal.',
-            isActive: false,
-        },
+    // 2. Use $effect to handle the browser-only logic (Clock + Timer)
+    $effect(() => {
+        const updateTime = () => {
+            currentTime = new Date().toLocaleString('en-US', {
+                timeZone: 'Asia/Colombo',
+                year: 'numeric',
+                month: 'short',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true,
+            });
+        };
 
-        {
-            name: 'Logix Stream',
-            description:
-                'Revamping inventory control systems for a highly powerful and fast logistics flow.',
-            isActive: false,
-        },
+        updateTime();
+        const interval = setInterval(updateTime, 1000);
 
-        {
-            name: 'Profit Pulse',
-            description:
-                'Crafting a dynamic revenue dashboard for a purely intuitive and bold fiscal review.',
-            isActive: false,
-        },
+        // Warning Logic
+        const hideTimeout = setTimeout(() => {
+            isWarningFaded = true; // Triggers CSS transition
+            setTimeout(() => {
+                isWarningVisible = false; // Removes from layout
+            }, 1000);
+        }, 5000);
 
-        {
-            name: 'Profit Pulse',
-            description:
-                'Ideating a smart industrial IoT module for a highly detailed and clear data visual.',
-            isActive: false,
-        },
-
-        {
-            name: 'Client Relay',
-            description:
-                'Structuring a high-growth CRM platform for a truly immersive and engaging service.',
-            isActive: false,
-        },
-
-        {
-            name: 'Ledger Light',
-            description:
-                'Refining a complex accounting interface for a really clean and smart audit trail.',
-            isActive: false,
-        },
-
-        {
-            name: 'Talent Forge',
-            description:
-                'Building a modern human capital portal for a vastly rhythmic and fluid HR journey.',
-            isActive: false,
-        },
-    ];
+        // Cleanup: Svelte 5 effects can return a cleanup function
+        return () => {
+            clearInterval(interval);
+            clearTimeout(hideTimeout);
+        };
+    });
 </script>
 
-<!-- style="background-image: url('/bg.png');" bg-cover bg-center -->
-<div class="w-full h-screen">
-    <div class="flex flex-col w-full sm:w-160 md:w-3xl lg:w-360 mx-auto p-6">
-        <!-- header  -->
+<div
+    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit p-4 gap-4 box-border"
+>
+    <!-- info  -->
+    <div
+        class="aspect-square flex items-center justify-center col-span-1 row-span-1 sm:col-span-2 sm:row-span-2 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1 border border-gray-200"
+    >
         <div
-            class="  text-gray-800 max-w-[1440px] h-[400px] overflow-hidden shrink-0 w-full mx-auto mt-[56px] pt-20"
+            class="flex flex-col text-sm text-gray-700 w-full h-full p-4 md:p-10 overflow-y-auto modern-scrollbar"
         >
-            <div class="font-semibold text-6xl mb-8 max-w-250">
-                Discover. Design. Deliver
-                <!-- Design & develop things that look great and scale even better. -->
-            </div>
-
-            <div class="font-normal text-2xl mb-5 max-w-250">
-                Hey, I’m Aravinda! 👋 I’m a product designer based in sunny Sri
-                Lanka.
-                <br /> <br />
-                For over 15 years, I’ve been crafting products that solve real problems—from
-                scaling complex SaaS and ERP systems to launching day-one ideas for
-                startups. This is my little corner of the web for all things design.
-                Take a look around at my latest work, visual experiments, and a few
-                product ideas I'm currently tinkering with.
-            </div>
-        </div>
-        <!-- header  -->
-        <div class="card-container mt-6">
-            {#each projects as project}
+            <!-- intor  -->
+            <div class="mb-6 w-full flex flex-col items-start gap-3">
                 <div
-                    class="group relative flex flex-col border border-gray-300 h-48 rounded-lg overflow-hidden transition-all justify-center items-center {project.isActive
-                        ? 'border border-green-500 hover:bg-green-50'
-                        : ''}"
+                    id="size-warning"
+                    class="block 2xl:hidden bg-red-500 text-white p-3 text-center w-full transition-opacity duration-1000 text-sm"
                 >
-                    <a
-                        href={project.isActive
-                            ? `./projects/${project.url}`
-                            : '#'}
-                        class="flex flex-col transition-opacity p-12
-             {project.isActive ? '' : 'group-hover:opacity-0'}"
-                    >
-                        <span class="text-lg font-semibold w-full"
-                            >{project.name}</span
-                        >
-                        <span class="text-sm w-full text-gray-600"
-                            >{project.description}</span
-                        >
-                    </a>
-
-                    {#if !project.isActive}
-                        <div
-                            class="absolute inset-0 hidden group-hover:flex items-center justify-center bg-gray-100/90 text-gray-500 font-medium italic cursor-not-allowed"
-                        >
-                            Work In Progress...
-                        </div>
-                    {/if}
+                    Please switch to a larger display for the best experience.
                 </div>
-            {/each}
+
+                <div
+                    class="rainbow-border animate-rainbow-spin rounded-full w-22"
+                >
+                    <img
+                        class="rounded-full border-white"
+                        src="/assets/1763549431722.jpg"
+                        alt=""
+                    />
+                </div>
+
+                <div class="text-2xl md:text-3xl font-bold text-gray-900">
+                    Discover. Design. Deliver
+                </div>
+                <!-- date  -->
+                <div
+                    class="flex-1 flex flex-col items-start justify-end min-h-auto w-full"
+                >
+                    <div class="w-full flex justify-between items-center">
+                        <div
+                            class="text-normal text-gray-800"
+                            id="srilankaTime"
+                        >
+                            {currentTime}
+                        </div>
+
+                        <div
+                            class="text-gray-500 flex gap-1 flex justify-center items-center"
+                        >
+                            <i class="ph-fill ph-circle text-green-600"></i>
+                            <div>Available</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- date  -->
+
+                <div class="text-gray-900 text-normal md:text-lg">
+                    I’m Aravinda, a product designer located in Sri Lanka.
+                    Partnering with companies to create digital interfaces that
+                    play a crucial role in realising their objectives for future
+                    success.
+                </div>
+                <!-- instructions  -->
+                <div class="text-sm">
+                    Best viewed on 2K or larger displays. While fully
+                    responsive, smaller screens may hide certain design details
+                    and layout elements.
+                </div>
+                <!-- instructions  -->
+            </div>
+            <!-- intor  -->
+
+            <!-- contact  -->
+            <div
+                class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] box-border h-fit gap-2"
+            >
+                <div class="border border-collapse rounded-sm">
+                    <a
+                        href="mailto:apranthilaka@outlook.com"
+                        class="text-black flex justify-center items-center transition-colors duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                    >
+                        Send Email
+                    </a>
+                </div>
+
+                <div class="border border-collapse rounded-sm">
+                    <a
+                        target="_blank"
+                        href="https://t.me/apranthilaka"
+                        class="hover:bg-sky-100 hover:border-sky-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                    >
+                        <!-- <i class="ph ph-telegram-logo text-lg"></i> -->
+                        Telegram
+                    </a>
+                </div>
+
+                <div class="border border-collapse rounded-sm">
+                    <a
+                        target="_blank"
+                        href="https://wa.me/94777499801"
+                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                    >
+                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                        Whatsapp
+                    </a>
+                </div>
+                <div class="border border-collapse rounded-sm">
+                    <a
+                        target="_blank"
+                        href="https://wa.me/94777499801"
+                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                    >
+                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                        X (Twitter)
+                    </a>
+                </div>
+
+                <div class="border border-collapse rounded-sm">
+                    <a
+                        target="_blank"
+                        href="https://wa.me/94777499801"
+                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                    >
+                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                        Linkedin
+                    </a>
+                </div>
+
+                <div class="border border-collapse rounded-sm">
+                    <a
+                        target="_blank"
+                        href="https://wa.me/94777499801"
+                        class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                    >
+                        <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                        Dribbble
+                    </a>
+                </div>
+            </div>
+            <!-- contact  -->
         </div>
     </div>
-</div>
+    <!-- info  -->
 
-<style>
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        grid-template-rows: auto;
-        gap: 24px;
-    }
-</style>
+    <!-- project 01  -->
+    <a
+        href="https://www.figma.com/proto/DzRSIl93px9xqQg95BTTMM/001---2026---Vectra---UK?node-id=3696-1796&p=f&viewport=520%2C225%2C0.24&t=yPvfobxqiYpvnHpb-8&scaling=contain&content-scaling=responsive&starting-point-node-id=3696%3A1796&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+        class="block aspect-square"
+    >
+        <img
+            src="/project-covers/001 - 2026 - Vectra - UK.png"
+            loading="lazy"
+            decoding="async"
+            alt="Fecta Project Preview"
+            class="w-full h-full object-cover"
+        />
+    </a>
+    <!-- project 01  -->
+
+    <!-- project 02  -->
+    <a
+        href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=lVTRMTtXd5SR2Yl2-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+        class="block aspect-square"
+    >
+        <img
+            src="/project-covers/002 - 2026 - Crest Analytics.png"
+            loading="lazy"
+            decoding="async"
+            alt="Fecta Project Preview"
+            class="w-full h-full object-cover"
+        />
+    </a>
+    <!-- project 02  -->
+
+    <!-- project 03  -->
+    <a
+        href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=lVTRMTtXd5SR2Yl2-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+        class="block aspect-square"
+    >
+        <img
+            src="/project-covers/003 - 2026 - Kinetix.png"
+            loading="lazy"
+            decoding="async"
+            alt="Fecta Project Preview"
+            class="w-full h-full object-cover"
+        />
+    </a>
+    <!-- project 03  -->
+
+    <!-- project 04  -->
+    <a
+        href="https://www.figma.com/proto/T43AORXB22cDsJSkTzI0Fv/004---2026---Veridian-Labs?node-id=1-287&viewport=639%2C436%2C0.26&t=jqpBaRuXcEyNvLgy-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A287&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+        class="block aspect-square"
+    >
+        <img
+            src="/project-covers/004 - 2026 - Veridian Labs.png"
+            loading="lazy"
+            decoding="async"
+            alt="Fecta Project Preview"
+            class="w-full h-full object-cover"
+        />
+    </a>
+    <!-- project 04  -->
+
+    <!-- project 05  -->
+    <a
+        href="https://www.figma.com/proto/w1Uoy2HgqfEFRgrKkzgwFe/005---Design-5---Draft?node-id=10-64&viewport=686%2C375%2C0.38&t=mix1sNTuKa8u5nNI-8&scaling=contain&content-scaling=responsive&starting-point-node-id=10%3A64&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+        class="block aspect-square"
+    >
+        <img
+            src="/project-covers/005 - Design 5 - Draft.png"
+            loading="lazy"
+            decoding="async"
+            alt="Fecta Project Preview"
+            class="w-full h-full object-cover"
+        />
+    </a>
+
+    <!-- project 05  -->
+
+    <!-- project 06  -->
+    <a
+        href="https://www.figma.com/proto/RDZVHyLoPYa7mpYL5IW5ZT/006---Design-7---Draft?node-id=1-86&p=f&viewport=492%2C373%2C0.21&t=AeAPL2UaXzIbk2AF-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A86&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+        class="block aspect-square"
+    >
+        <img
+            src="/project-covers/006 - Design 7 - Draft.png"
+            loading="lazy"
+            decoding="async"
+            alt="Fecta Project Preview"
+            class="w-full h-full object-cover"
+        />
+    </a>
+    <!-- project 06  -->
+
+    <!-- project 07  -->
+    <a
+        href="https://www.figma.com/proto/rBQxE9Rrb0i3FDIwyPXYX6/007---Design-7---Draft?node-id=6-421&p=f&viewport=610%2C439%2C0.17&t=t6sjWk12R65kRJAz-8&scaling=contain&content-scaling=responsive&starting-point-node-id=6%3A421&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+        class="block aspect-square"
+    >
+        <img
+            src="/project-covers/007 - Design 7 - Draft.png"
+            loading="lazy"
+            decoding="async"
+            alt="Fecta Project Preview"
+            class="w-full h-full object-cover"
+        />
+    </a>
+    <!-- project 07  -->
+
+    <!-- project 08  -->
+    <div
+        href="https://www.google.com/"
+        class="group relative aspect-square flex items-center justify-center gap-4 flex-col rounded-lg border-2 border-gray-600 border-dashed"
+    >
+        <div class="p-6 flex items-center justify-center flex-col gap-3">
+            <div
+                class="text-lg md:text-2xl font-semibold md:font-bold text-gray-900 text-center"
+            >
+                Add your project here
+            </div>
+        </div>
+        <!-- contact  -->
+        <div
+            class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] box-border h-fit gap-2 p-10"
+        >
+            <div class="border border-collapse rounded-sm">
+                <a
+                    href="mailto:apranthilaka@outlook.com"
+                    class="text-black flex justify-center items-center transition-colors duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                >
+                    Send Email
+                </a>
+            </div>
+
+            <div class="border border-collapse rounded-sm">
+                <a
+                    target="_blank"
+                    href="https://t.me/apranthilaka"
+                    class="hover:bg-sky-100 hover:border-sky-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                >
+                    <!-- <i class="ph ph-telegram-logo text-lg"></i> -->
+                    Telegram
+                </a>
+            </div>
+
+            <div class="border border-collapse rounded-sm">
+                <a
+                    target="_blank"
+                    href="https://wa.me/94777499801"
+                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                >
+                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                    Whatsapp
+                </a>
+            </div>
+            <div class="border border-collapse rounded-sm">
+                <a
+                    target="_blank"
+                    href="https://wa.me/94777499801"
+                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                >
+                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                    X (Twitter)
+                </a>
+            </div>
+
+            <div class="border border-collapse rounded-sm">
+                <a
+                    target="_blank"
+                    href="https://wa.me/94777499801"
+                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                >
+                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                    Linkedin
+                </a>
+            </div>
+
+            <div class="border border-collapse rounded-sm">
+                <a
+                    target="_blank"
+                    href="https://wa.me/94777499801"
+                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
+                >
+                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
+                    Dribbble
+                </a>
+            </div>
+        </div>
+        <!-- contact  -->
+    </div>
+    <!-- project 08  -->
+</div>
