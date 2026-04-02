@@ -295,7 +295,7 @@
     <!-- project 08  -->
     <div
         href="https://www.google.com/"
-        class="group relative aspect-square flex items-center justify-center gap-4 flex-col rounded-lg border-2 border-gray-600 border-dashed"
+        class="group relative aspect-square flex items-center justify-center gap-4 flex-col rounded-lg border-2 border-gray-500 border-dashed"
     >
         <div class="p-6 flex items-center justify-center flex-col gap-3">
             <div
@@ -306,70 +306,29 @@
         </div>
         <!-- contact  -->
         <div
-            class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] box-border h-fit gap-2 p-10"
+            class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] box-border h-fit gap-2 p-5"
         >
-            <div class="border border-collapse rounded-sm">
-                <a
-                    href="mailto:apranthilaka@outlook.com"
-                    class="text-black flex justify-center items-center transition-colors duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                >
-                    Send Email
-                </a>
-            </div>
+            <a
+                href="mailto:apranthilaka@outlook.com"
+                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500 col-span-2"
+            >
+                Send Email
+            </a>
+            <a
+                target="_blank"
+                href="https://t.me/apranthilaka"
+                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+            >
+                Telegram
+            </a>
 
-            <div class="border border-collapse rounded-sm">
-                <a
-                    target="_blank"
-                    href="https://t.me/apranthilaka"
-                    class="hover:bg-sky-100 hover:border-sky-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                >
-                    <!-- <i class="ph ph-telegram-logo text-lg"></i> -->
-                    Telegram
-                </a>
-            </div>
-
-            <div class="border border-collapse rounded-sm">
-                <a
-                    target="_blank"
-                    href="https://wa.me/94777499801"
-                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                >
-                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                    Whatsapp
-                </a>
-            </div>
-            <div class="border border-collapse rounded-sm">
-                <a
-                    target="_blank"
-                    href="https://wa.me/94777499801"
-                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                >
-                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                    X (Twitter)
-                </a>
-            </div>
-
-            <div class="border border-collapse rounded-sm">
-                <a
-                    target="_blank"
-                    href="https://wa.me/94777499801"
-                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                >
-                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                    Linkedin
-                </a>
-            </div>
-
-            <div class="border border-collapse rounded-sm">
-                <a
-                    target="_blank"
-                    href="https://wa.me/94777499801"
-                    class="hover:bg-green-100 hover:border-green-400 border border-gray-300 text-gray-800 hover:text-black flex justify-center items-center rounded-full transition-all duration-200 text-sm px-4 py-1.5 gap-2 pb-[6px]"
-                >
-                    <!-- <i class="ph ph-whatsapp-logo text-lg"></i> -->
-                    Dribbble
-                </a>
-            </div>
+            <a
+                target="_blank"
+                href="https://wa.me/94777499801"
+                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+            >
+                Whatsapp
+            </a>
         </div>
         <!-- contact  -->
     </div>
