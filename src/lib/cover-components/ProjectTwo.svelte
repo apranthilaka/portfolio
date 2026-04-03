@@ -1,9 +1,15 @@
-<a
-    class="block aspect-square shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white"
-    href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=ctH8H4GWGSaGggOB-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
-    target="_blank"
-    rel="noopener"
+<div
+    class="block aspect-square shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white relative"
 >
+    <a
+        class="block w-full h-full absolute inset-0 z-10"
+        title=""
+        href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=ctH8H4GWGSaGggOB-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
+        target="_blank"
+        rel="noopener"
+    >
+    </a>
+
     <!-- <img
             src="/project-covers/001 - 2026 - Vectra - UK.png"
             loading="lazy"
@@ -89,4 +95,4 @@
             </div>
         </div> -->
     </div>
-</a>
+</div>

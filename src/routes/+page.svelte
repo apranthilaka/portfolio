@@ -43,11 +43,11 @@
 </script>
 
 <div
-    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit p-4 gap-4 box-border bg-neutral-100"
+    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit gap-4 box-border bg-neutral-100 p-5"
 >
     <!-- info  -->
     <div
-        class="aspect-square flex items-center justify-center col-span-1 row-span-1 sm:col-span-2 sm:row-span-2 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1 border-black p-4 modern-scrollbar overflow-y-auto"
+        class="aspect-square flex items-center justify-center col-span-1 row-span-1 sm:col-span-2 sm:row-span-2 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1 modern-scrollbar overflow-y-auto p-5"
     >
         <div class="flex flex-col text-sm text-gray-700 w-full h-full">
             <!-- intor  -->
@@ -130,18 +130,18 @@
 
             <!-- contact  -->
             <div
-                class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] box-border h-fit gap-2"
+                class="w-full mb-6 rounded-lg grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] box-border h-fit gap-2 pb-5"
             >
                 <a
                     href="mailto:apranthilaka@outlook.com"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Send Email
                 </a>
                 <a
                     target="_blank"
                     href="https://t.me/apranthilaka"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Telegram
                 </a>
@@ -149,14 +149,14 @@
                 <a
                     target="_blank"
                     href="https://wa.me/94777499801"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Whatsapp
                 </a>
 
                 <a
                     href="https://dribbble.com/aravinda"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     Dribbble
                 </a>
@@ -164,7 +164,7 @@
                 <a
                     target="_blank"
                     href="https://www.linkedin.com/in/aravindaprabath/"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     <div>Linkedin</div>
                 </a>
@@ -172,7 +172,7 @@
                 <a
                     target="_blank"
                     href="https://x.com/apranthilaka"
-                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                    class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
                 >
                     X (Twitter)
                 </a>
@@ -295,7 +295,7 @@
         >
             <a
                 href="mailto:apranthilaka@outlook.com"
-                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500 col-span-2"
+                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
             >
                 Send Email
             </a>
@@ -303,7 +303,7 @@
             <a
                 target="_blank"
                 href="https://t.me/apranthilaka"
-                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
             >
                 Telegram
             </a>
@@ -311,7 +311,7 @@
             <a
                 target="_blank"
                 href="https://wa.me/94777499801"
-                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-500"
+                class="flex justify-center items-center text-sm border h-10 w-full rounded-sm border-gray-300 hover:border-gray-500 transition-colors duration-300 hover:font-semibold hover:text-black"
             >
                 Whatsapp
             </a>
