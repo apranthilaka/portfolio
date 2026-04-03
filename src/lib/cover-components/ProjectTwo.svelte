@@ -32,67 +32,72 @@
             ></iframe>
         </div>
 
-        <div
-            class=" flex flex-col items-start justify-start p-4 gap-2 w-full bg-slate-50 rounded-lg border-slate-300 border"
-        >
-            <div class=" w-full flex justify-between">
-                <div class="font-lg font-medium text-gray-900">
-                    Premium Access
-                    <span
-                        class="text-xs font-normal text-blue-800 bg-blue-100 px-2 py-1 rounded-sm ml-2 border border-blue-300"
-                    >
-                        Top Rated
-                    </span>
-                </div>
-                <div class="font-lg font-medium text-gray-900 text-sm">
-                    All-Day Access 24/7
-                </div>
-            </div>
-            <div class=" w-full flex justify-between">
-                <div class="font-normal text-gray-500 text-sm">
-                    Year-Round <span></span>
-                </div>
-                <div class="font-normal text-gray-500 text-sm">
-                    Enhanced Features
-                </div>
-            </div>
+        <div class=" rounded-md border border-gray-300 w-full">
+            <table class="min-w-full divide-y-2 divide-gray-200">
+                <thead class="ltr:text-left rtl:text-right bg-gray-100">
+                    <tr class="*:font-semibold *:text-gray-900 min-h-10">
+                        <th class="px-3 py-2 whitespace-nowrap">Name</th>
+                        <th class="px-3 py-2 whitespace-nowrap">DoB</th>
+                        <th class="px-3 py-2 whitespace-nowrap">Role</th>
+                        <th class="px-3 py-2 whitespace-nowrap">Salary</th>
+                    </tr>
+                </thead>
 
-            <div class=" w-full flex justify-between">
-                <div
-                    class="text-sm font-normal text-gray-500 group-hover:text-gray-800 transition-colors duration-300"
-                >
-                    Year-Round
-                </div>
-                <div
-                    class="text-sm font-normal text-gray-500 group-hover:text-gray-800 transition-colors duration-300"
-                >
-                    Enhanced Features
-                </div>
-            </div>
+                <tbody class="divide-y divide-gray-200 *:text-sm">
+                    <tr class="*:text-gray-500 min-h-10">
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Nandor the Relentless</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">04/06/1262</td>
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Vampire Warrior</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">$0</td>
+                    </tr>
+
+                    <tr class="*:text-gray-500 min-h-10">
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Laszlo Cravensworth</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">19/10/1678</td>
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Vampire Gentleman</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">$0</td>
+                    </tr>
+
+                    <tr class="*:text-gray-500 min-h-10">
+                        <td class="px-3 py-2 whitespace-nowrap">Nadja</td>
+                        <td class="px-3 py-2 whitespace-nowrap">15/03/1593</td>
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Vampire Seductress</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">$0</td>
+                    </tr>
+
+                    <tr class="*:text-gray-500 min-h-10">
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Colin Robinson</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">01/09/1971</td>
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Energy Vampire</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">$53,000</td>
+                    </tr>
+
+                    <tr class="*:text-gray-500 min-h-10">
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Guillermo de la Cruz</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">18/11/1991</td>
+                        <td class="px-3 py-2 whitespace-nowrap"
+                            >Familiar/Vampire Hunter</td
+                        >
+                        <td class="px-3 py-2 whitespace-nowrap">$0</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <!-- <div
-            class=" flex flex-col items-start justify-start gap-2 w-full rounded-lg"
-        >
-            <div class=" w-full flex justify-between">
-                <div class="font-lg font-semibold text-gray-900">
-                    <a
-                        href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=ctH8H4GWGSaGggOB-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
-                        target="_blank"
-                        rel="noopener"
-                        class="text-sm flex justify-center items-center px-6 h-11 text-gray-800 rounded-lg transition-colors duration-300 font-normal border border-slate-300 bg-slate-100 hover:bg-slate-200 hover:text-black"
-                        >Figma Prototype</a
-                    >
-                </div>
-                <div class="font-lg font-semibold text-gray-900">
-                    <a
-                        href=""
-                        onclick={(e) => e.preventDefault()}
-                        class="text-sm flex justify-center items-center px-6 h-11 text-gray-800 rounded-lg transition-colors duration-300 font-normal border border-gray-300 bg-gray-50 hover:bg-gray-200 hover:text-black cursor-not-allowed"
-                    >
-                        HTML Prototype (Work In Progress)
-                    </a>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
