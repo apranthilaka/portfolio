@@ -1,5 +1,8 @@
-<div
+<a
     class="block aspect-square shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white"
+    href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=ctH8H4GWGSaGggOB-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
+    target="_blank"
+    rel="noopener"
 >
     <!-- <img
             src="/project-covers/001 - 2026 - Vectra - UK.png"
@@ -8,14 +11,15 @@
             alt="Fecta Project Preview"
             class="w-full h-full object-cover"
         /> -->
+
     <div
         class="h-full w-full flex flex-col items-start justify-start p-5 gap-5"
     >
         <div class=" w-full h-full flex justify-between">
             <iframe
                 title=""
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22185.82619023293!2d-74.01710311465742!3d40.71302729088426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2slk!4v1775147930340!5m2!1sen!2slk"
-                class="w-full h-full border-none"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.81536310977!2d79.81500565289788!3d6.921836877837569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1775186766375!5m2!1sen!2slk"
+                class="w-full h-full border-none border-0 rounded-lg shadow-none"
                 allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -60,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div
+        <!-- <div
             class=" flex flex-col items-start justify-start gap-2 w-full rounded-lg"
         >
             <div class=" w-full flex justify-between">
@@ -83,6 +87,6 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
-</div>
+</a>

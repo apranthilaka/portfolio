@@ -1,4 +1,7 @@
-<div
+<a
+    href="https://www.figma.com/proto/DzRSIl93px9xqQg95BTTMM/001---2026---Vectra---UK?node-id=3696-1796&p=f&viewport=520%2C225%2C0.24&t=yPvfobxqiYpvnHpb-8&scaling=contain&content-scaling=responsive&starting-point-node-id=3696%3A1796&page-id=0%3A1&hide-ui=1"
+    target="_blank"
+    rel="noopener"
     class="block aspect-square shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white"
 >
     <!-- <img
@@ -13,7 +16,7 @@
     >
         <img
             class="w-full h-full overflow-hidden object-cover rounded-lg"
-            src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=2739&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
         />
         <div
@@ -54,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div
+        <!-- <div
             class=" flex flex-col items-start justify-start gap-2 w-full rounded-lg"
         >
             <div class=" w-full flex justify-between">
@@ -77,6 +80,6 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
-</div>
+</a>
