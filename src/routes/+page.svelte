@@ -82,8 +82,13 @@
                 and code. <br />I take care of the final 10%—that critical stage
                 where interfaces often lose their polish. I partner with dev
                 teams to ensure the final product is a 1:1, pixel-perfect match
-                of the Figma design. I make sure what you see in Figma is
-                exactly what the user gets.
+                of the
+                <a
+                    target="_blank"
+                    class="text-black underline font-medium"
+                    href="https://apranthilaka.com/figma.html">Figma design</a
+                >. I make sure what you see in Figma is exactly what the user
+                gets.
             </div>
             <!-- instructions  -->
             <!-- <div class="text-sm text-gray-700 mt-2">
