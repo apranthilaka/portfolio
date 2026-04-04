@@ -107,8 +107,9 @@
                     </div> -->
             <a
                 target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:border-gray-300 group"
-                href="https://www.figma.com/proto/DzRSIl93px9xqQg95BTTMM/001---2026---Vectra---UK?node-id=4080-1014&p=f&viewport=804%2C735%2C0.05&t=BwveTYFqoEs5t9AY-8&scaling=contain&content-scaling=responsive&starting-point-node-id=4080%3A1014&page-id=0%3A1&hide-ui=1"
+                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
+                href="*"
+                onclick={(e) => e.preventDefault()}
             >
                 <div class="text-black font-semibold group-hover:underline">
                     Vectra
@@ -117,8 +118,9 @@
             </a>
             <a
                 target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:border-gray-300 group"
-                href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/P2---2026---Crest-Analytics?node-id=1-463&p=f&viewport=863%2C414%2C0.23&t=Mc7WfXuqqK2K3Hj7-8&scaling=containh&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
+                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
+                href="*"
+                onclick={(e) => e.preventDefault()}
             >
                 <div class="text-black font-semibold group-hover:underline">
                     Crest Analytics
@@ -127,8 +129,9 @@
             </a>
             <a
                 target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:border-gray-300 group"
-                href="https://www.figma.com/proto/QgADtZlvYTpiqw3344Ii1P/P32026---Kinetix?node-id=1-301&p=f&viewport=341%2C425%2C0.18&t=SLo44VVN6QrfuVJz-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A301&page-id=0%3A1&hide-ui=1"
+                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
+                href="*"
+                onclick={(e) => e.preventDefault()}
             >
                 <div class="text-black font-semibold group-hover:underline">
                     Kinetix
@@ -137,18 +140,24 @@
             </a>
             <a
                 target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 group hover:cursor-not-allowed"
-                href=""
+                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
+                href="*"
+                onclick={(e) => e.preventDefault()}
             >
-                <div class="text-black font-semibold">Veridian Labs</div>
+                <div class="text-black font-semibold group-hover:underline">
+                    Veridian Labs
+                </div>
                 <div class="text-gray-500">Product / Brainstorming</div>
             </a>
             <a
                 target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 group hover:cursor-not-allowed"
-                href=""
+                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
+                href="*"
+                onclick={(e) => e.preventDefault()}
             >
-                <div class="text-black font-semibold">Aximo</div>
+                <div class="text-black font-semibold group-hover:underline">
+                    Aximo
+                </div>
                 <div class="text-gray-500">Product / Brainstorming</div>
             </a>
         </div>
