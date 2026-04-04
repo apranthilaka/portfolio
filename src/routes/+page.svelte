@@ -85,7 +85,7 @@
                 of the
                 <a
                     target="_blank"
-                    class="text-black underline font-medium"
+                    class="text-black font-medium"
                     href="https://apranthilaka.com/figma.html">Figma design</a
                 >. I make sure what you see in Figma is exactly what the user
                 gets.
