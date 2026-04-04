@@ -1,15 +1,6 @@
 <div
-    class="block aspect-square shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white relative"
+    class="block aspect-square rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white"
 >
-    <a
-        class="block w-full h-full absolute inset-0 z-10"
-        title=""
-        href="https://www.figma.com/proto/cBenFsHT0NCeQxjs3eneMH/002---2026---Crest-Analytics?node-id=1-463&p=f&viewport=25%2C521%2C0.24&t=ctH8H4GWGSaGggOB-8&scaling=contain&content-scaling=responsive&starting-point-node-id=1%3A463&page-id=0%3A1&hide-ui=1"
-        target="_blank"
-        rel="noopener"
-    >
-    </a>
-
     <!-- <img
             src="/project-covers/001 - 2026 - Vectra - UK.png"
             loading="lazy"
@@ -32,8 +23,8 @@
             ></iframe>
         </div>
 
-        <div class=" rounded-md border border-gray-300 w-full">
-            <table class="min-w-full divide-y-2 divide-gray-200">
+        <div class=" rounded-md border border-gray-300 overflow-hidden w-full">
+            <table class=" divide-y-2 divide-gray-200">
                 <thead class="ltr:text-left rtl:text-right bg-gray-100">
                     <tr class="*:font-semibold *:text-gray-900 min-h-10">
                         <th class="px-3 py-2 whitespace-nowrap">Name</th>
