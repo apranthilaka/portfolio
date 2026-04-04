@@ -70,6 +70,11 @@
                     alt=""
                 />
             </div>
+            <div
+                class="px-5 py-3 bg-red-50 border border-red-500 w-full rounded-md text-center text-red-600 text-xs font-semibold"
+            >
+                This portfolio is under construction!
+            </div>
 
             <div class="text-gray-700 text-sm">
                 After a few years focusing on UI/UX, I’m back to my engineering
