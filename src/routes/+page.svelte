@@ -1,5 +1,6 @@
 <script>
     import ProjectOne from '$lib/cover-components/ProjectOne.svelte';
+    import ProjectThree from '$lib/cover-components/ProjectThree.svelte';
     import ProjectTwo from '$lib/cover-components/ProjectTwo.svelte';
 
     // 1. Define reactive states using runes
@@ -44,7 +45,7 @@
 
 <!-- full grid layout  -->
 <div
-    class="grid w-full h-screen grid-cols-1 2xl:grid-cols-[370px_1fr] 2xl:overflow-hidden bg-white modern-scrollbar overflow-y-auto"
+    class="grid w-full h-screen grid-cols-1 xl:grid-cols-[370px_1fr] xl:overflow-hidden bg-white modern-scrollbar overflow-y-auto"
 >
     <!-- info  -->
     <div
@@ -205,7 +206,7 @@
     <!-- info  -->
 
     <!-- project grid  -->
-    <div class="h-full w-full 2xl:overflow-y-auto modern-scrollbar bg-gray-200">
+    <div class="h-full w-full xl:overflow-y-auto modern-scrollbar bg-gray-200">
         <div
             class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit gap-4 box-border p-5 w-full"
         >
@@ -217,10 +218,10 @@
             <!-- project 02  -->
             <ProjectTwo />
             <!-- project 02  -->
-            <!-- project 01  -->
-            <ProjectOne />
+            <!-- project 03  -->
+            <ProjectThree />
 
-            <!-- project 01  -->
+            <!-- project 03  -->
 
             <!-- project 02  -->
             <ProjectTwo />
