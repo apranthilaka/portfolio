@@ -1,24 +1,25 @@
 <script>
-    import ProjectOne from '$lib/cover-components/ProjectOne.svelte';
-    import ProjectThree from '$lib/cover-components/ProjectThree.svelte';
-    import ProjectTwo from '$lib/cover-components/ProjectTwo.svelte';
+    import ProjectOne from "$lib/cover-components/ProjectOne.svelte";
+    import ProjectThree from "$lib/cover-components/ProjectThree.svelte";
+    import ProjectTwo from "$lib/cover-components/ProjectTwo.svelte";
+    import ProjectFour from "$lib/cover-components/ProjectFour.svelte";
 
     // 1. Define reactive states using runes
-    let currentTime = $state('');
+    let currentTime = $state("");
     let isWarningVisible = $state(true);
     let isWarningFaded = $state(false);
 
     // 2. Clock Effect: Updates every second
     $effect(() => {
         const updateTime = () => {
-            currentTime = new Date().toLocaleString('en-US', {
-                timeZone: 'Asia/Colombo',
-                year: 'numeric',
-                month: 'short',
-                day: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
+            currentTime = new Date().toLocaleString("en-US", {
+                timeZone: "Asia/Colombo",
+                year: "numeric",
+                month: "short",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
                 hour12: true,
             });
         };
@@ -184,19 +185,31 @@
                 </div>
 
                 <div class="text-gray-500 flex gap-3">
-                    <a target="_blank" href="https://x.com/apranthilaka">
-                        <i class="ph ph-x-logo text-[16px]"></i>
+                    <a
+                        target="_blank"
+                        href="https://x.com/apranthilaka"
+                        aria-label="X (formerly Twitter)"
+                        class="hover:text-black hover:scale-110 transition-all duration-200"
+                    >
+                        <i class="ph ph-x-logo text-[18px]"></i>
                     </a>
 
-                    <a target="_blank" href="https://dribbble.com/aravinda">
-                        <i class="ph ph-dribbble-logo text-[16px]"></i>
+                    <a
+                        target="_blank"
+                        href="https://dribbble.com/aravinda"
+                        aria-label="Dribbble"
+                        class="hover:text-black hover:scale-110 transition-all duration-200"
+                    >
+                        <i class="ph ph-dribbble-logo text-[18px]"></i>
                     </a>
 
                     <a
                         target="_blank"
                         href="https://www.linkedin.com/in/aravindaprabath/"
+                        aria-label="LinkedIn"
+                        class="hover:text-black hover:scale-110 transition-all duration-200"
                     >
-                        <i class="ph ph-linkedin-logo text-[16px]"></i>
+                        <i class="ph ph-linkedin-logo text-[18px]"></i>
                     </a>
                 </div>
             </div>
@@ -222,6 +235,10 @@
             <ProjectThree />
 
             <!-- project 03  -->
+            
+            <!-- project 04  -->
+            <ProjectFour />
+            <!-- project 04  -->
 
             <!-- project 02  -->
             <ProjectTwo />
@@ -290,7 +307,7 @@
 
     /* 1. Define the custom property so CSS can animate the degree */
     @property --angle {
-        syntax: '<angle>';
+        syntax: "<angle>";
         initial-value: 0deg;
         inherits: false;
     }
