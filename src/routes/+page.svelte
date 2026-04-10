@@ -1,25 +1,25 @@
 <script>
-    import ProjectOne from "$lib/cover-components/ProjectOne.svelte";
-    import ProjectThree from "$lib/cover-components/ProjectThree.svelte";
-    import ProjectTwo from "$lib/cover-components/ProjectTwo.svelte";
-    import ProjectFour from "$lib/cover-components/ProjectFour.svelte";
+    import ProjectOne from '$lib/cover-components/ProjectOne.svelte';
+    import ProjectThree from '$lib/cover-components/ProjectThree.svelte';
+    import ProjectTwo from '$lib/cover-components/ProjectTwo.svelte';
+    import ProjectFour from '$lib/cover-components/ProjectFour.svelte';
 
     // 1. Define reactive states using runes
-    let currentTime = $state("");
+    let currentTime = $state('');
     let isWarningVisible = $state(true);
     let isWarningFaded = $state(false);
 
     // 2. Clock Effect: Updates every second
     $effect(() => {
         const updateTime = () => {
-            currentTime = new Date().toLocaleString("en-US", {
-                timeZone: "Asia/Colombo",
-                year: "numeric",
-                month: "short",
-                day: "2-digit",
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit",
+            currentTime = new Date().toLocaleString('en-US', {
+                timeZone: 'Asia/Colombo',
+                year: 'numeric',
+                month: 'short',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
                 hour12: true,
             });
         };
@@ -235,7 +235,7 @@
             <ProjectThree />
 
             <!-- project 03  -->
-            
+
             <!-- project 04  -->
             <ProjectFour />
             <!-- project 04  -->
@@ -273,6 +273,7 @@
             <!-- project 02  -->
         </div>
     </div>
+    <div></div>
     <!-- project grid  -->
 </div>
 
@@ -307,7 +308,7 @@
 
     /* 1. Define the custom property so CSS can animate the degree */
     @property --angle {
-        syntax: "<angle>";
+        syntax: '<angle>';
         initial-value: 0deg;
         inherits: false;
     }
