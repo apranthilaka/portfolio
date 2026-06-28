@@ -56,7 +56,7 @@
 
     <!-- intor  -->
     <div class="mb-6 w-full flex flex-col items-start gap-3">
-        <div class="rainbow-border animate-rainbow-spin rounded-full w-22">
+        <div class="rainbow-border animate-rainbow-spin w-30 mb-2.5">
             <img class="rounded-full border-white" src="/profile.jpg" alt="" />
         </div>
         <!-- <div
@@ -66,17 +66,18 @@
         </div> -->
 
         <div class="text-gray-700 text-lg">
-            After a few years focusing on UI/UX, I’m back to my engineering
-            roots. With the help of AI, I now bridge the gap between design and
-            code. I take care of the final 10%—that critical stage where
-            interfaces often lose their polish. I partner with dev teams to
-            ensure the final product is a 1:1, pixel-perfect match of the Figma
-            design
-            <!-- <a
-                    target="_blank"
-                    class="text-black font-medium"
-                    href="https://apranthilaka.com/figma.html">Figma design</a
-                > -->
+            After a few years focusing on Product Design (UI/UX), I’m back to my
+            engineering roots. With the help of AI, I now bridge the gap between
+            design and code. I take care of the final 10%—that critical stage
+            where interfaces often lose their polish. I partner with dev teams
+            to ensure the final product is a 1:1, pixel-perfect match of the
+
+            <a
+                target="_blank"
+                class="text-black font-medium underline hover:text-gray-700 transition-colors"
+                href="https://apranthilaka.com/"
+                >Figma widgits and pages
+            </a>
             . I make sure what you see in Figma is exactly what the user gets.
         </div>
         <!-- instructions  -->
