@@ -3,6 +3,7 @@
     import ProjectThree from '$lib/cover-components/ProjectThree.svelte';
     import ProjectTwo from '$lib/cover-components/ProjectTwo.svelte';
     import ProjectFour from '$lib/cover-components/ProjectFour.svelte';
+    import IntroBlock from '$lib/cover-components/IntroBlock.svelte';
 
     // 1. Define reactive states using runes
     let currentTime = $state('');
@@ -44,240 +45,84 @@
     });
 </script>
 
-<!-- full grid layout  -->
+<!-- project grid  -->
 <div
-    class="grid w-full h-screen grid-cols-1 xl:grid-cols-[370px_1fr] xl:overflow-hidden bg-white modern-scrollbar overflow-y-auto"
+    class="h-full w-full xl:overflow-y-auto modern-scrollbar bg-gray-200 max-w-[2560px] m-auto"
 >
-    <!-- info  -->
     <div
-        class="flex flex-col p-8 text-sm text-gray-700 h-full w-full bg-size-[120%_50%] bg-no-repeat bg-top bg-[url('../assets/bg.png')] bg-none"
+        class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit gap-4 box-border p-5 w-full grid-rows-auto"
     >
-        {#if isWarningVisible}
-            <div
-                id="size-warning"
-                class="block 2xl:hidden bg-red-500 text-white px-3 py-5 text-center w-full transition-opacity duration-1000 text-sm rounded-md mb-5 {isWarningFaded
-                    ? 'opacity-0'
-                    : 'opacity-100'}"
-            >
-                Please switch to a larger display for the best experience.
-            </div>
-        {/if}
+        <!-- project 01  -->
+        <IntroBlock />
+        <!-- project 01  -->
 
-        <!-- intor  -->
-        <div class="mb-6 w-full flex flex-col items-start gap-3">
-            <div class="rainbow-border animate-rainbow-spin rounded-full w-22">
-                <img
-                    class="rounded-full border-white"
-                    src="/profile.jpg"
-                    alt=""
-                />
-            </div>
-            <div
-                class="px-5 py-3 bg-red-50 border border-red-500 w-full rounded-md text-center text-red-600 text-xs font-semibold"
-            >
-                This portfolio is under construction!
-            </div>
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
 
-            <div class="text-gray-700 text-sm">
-                After a few years focusing on UI/UX, I’m back to my engineering
-                roots. With the help of AI, I now bridge the gap between design
-                and code. <br />I take care of the final 10%—that critical stage
-                where interfaces often lose their polish. I partner with dev
-                teams to ensure the final product is a 1:1, pixel-perfect match
-                of the Figma design
-                <!-- <a
-                    target="_blank"
-                    class="text-black font-medium"
-                    href="https://apranthilaka.com/figma.html">Figma design</a
-                > -->
-                . I make sure what you see in Figma is exactly what the user gets.
-            </div>
-            <!-- instructions  -->
-            <!-- <div class="text-sm text-gray-700 mt-2">
-                Best viewed on 2K or larger displays. While fully responsive,
-                smaller screens may hide certain design details and layout
-                elements.
-            </div> -->
-            <!-- instructions  -->
-        </div>
-        <!-- intor  -->
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
 
-        <!-- projects  -->
-        <div class="mb-6 w-full">
-            <!-- <div class="mb-2 text-gray-500 font-normal text-xs">
-                        Latest Engagements
-                    </div> -->
-            <a
-                target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
-                href="*"
-                onclick={(e) => e.preventDefault()}
-            >
-                <div class="text-black font-semibold group-hover:underline">
-                    Vectra
-                </div>
-                <div class="text-gray-500">Product / WIP</div>
-            </a>
-            <a
-                target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
-                href="*"
-                onclick={(e) => e.preventDefault()}
-            >
-                <div class="text-black font-semibold group-hover:underline">
-                    Crest Analytics
-                </div>
-                <div class="text-gray-500">Product / WIP</div>
-            </a>
-            <a
-                target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
-                href="*"
-                onclick={(e) => e.preventDefault()}
-            >
-                <div class="text-black font-semibold group-hover:underline">
-                    Kinetix
-                </div>
-                <div class="text-gray-500">Product / WIP</div>
-            </a>
-            <a
-                target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
-                href="*"
-                onclick={(e) => e.preventDefault()}
-            >
-                <div class="text-black font-semibold group-hover:underline">
-                    Veridian Labs
-                </div>
-                <div class="text-gray-500">Product / Brainstorming</div>
-            </a>
-            <a
-                target="_blank"
-                class="flex justify-between items-center border-b border-gray-200 h-10 hover:cursor-not-allowed"
-                href="*"
-                onclick={(e) => e.preventDefault()}
-            >
-                <div class="text-black font-semibold group-hover:underline">
-                    Aximo
-                </div>
-                <div class="text-gray-500">Product / Brainstorming</div>
-            </a>
-        </div>
-        <!-- projects  -->
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
 
-        <!-- date  -->
-        <div
-            class="flex-1 flex flex-col items-start justify-end min-h-auto w-full"
-        >
-            <div class="w-full flex justify-between items-center">
-                <div class="w-full flex justify-start gap-2 items-center">
-                    <div class="text-normal text-gray-800" id="srilankaTime">
-                        {currentTime}
-                    </div>
+        <!-- project 03  -->
+        <ProjectThree />
+        <!-- project 03  -->
 
-                    <!-- <div
-                            class="text-gray-500 flex gap-1 justify-center items-center"
-                        >
-                            <i class="ph-fill ph-circle text-green-600 text-xs"
-                            ></i>
-                            <div class="mb-0.5">Available</div>
-                        </div> -->
-                </div>
+        <!-- project 04  -->
+        <ProjectFour />
+        <!-- project 04  -->
 
-                <div class="text-gray-500 flex gap-3">
-                    <a
-                        target="_blank"
-                        href="https://x.com/apranthilaka"
-                        aria-label="X (formerly Twitter)"
-                        class="hover:text-black hover:scale-110 transition-all duration-200"
-                    >
-                        <i class="ph ph-x-logo text-[18px]"></i>
-                    </a>
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
 
-                    <a
-                        target="_blank"
-                        href="https://dribbble.com/aravinda"
-                        aria-label="Dribbble"
-                        class="hover:text-black hover:scale-110 transition-all duration-200"
-                    >
-                        <i class="ph ph-dribbble-logo text-[18px]"></i>
-                    </a>
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
 
-                    <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/aravindaprabath/"
-                        aria-label="LinkedIn"
-                        class="hover:text-black hover:scale-110 transition-all duration-200"
-                    >
-                        <i class="ph ph-linkedin-logo text-[18px]"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- date  -->
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
+
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
+
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
+
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
+
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
+
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
+
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
+
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
+
+        <!-- project 02  -->
+        <ProjectTwo />
+        <!-- project 02  -->
     </div>
-    <!-- info  -->
-
-    <!-- project grid  -->
-    <div class="h-full w-full xl:overflow-y-auto modern-scrollbar bg-gray-200">
-        <div
-            class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(500px,1fr))] h-fit gap-4 box-border p-5 w-full"
-        >
-            <!-- project 01  -->
-            <ProjectOne />
-
-            <!-- project 01  -->
-
-            <!-- project 02  -->
-            <ProjectTwo />
-            <!-- project 02  -->
-            <!-- project 03  -->
-            <ProjectThree />
-
-            <!-- project 03  -->
-
-            <!-- project 04  -->
-            <ProjectFour />
-            <!-- project 04  -->
-
-            <!-- project 02  -->
-            <ProjectTwo />
-            <!-- project 02  -->
-            <!-- project 01  -->
-            <ProjectOne />
-
-            <!-- project 01  -->
-
-            <!-- project 02  -->
-            <ProjectTwo />
-            <!-- project 02  -->
-
-            <!-- project 02  -->
-            <ProjectTwo />
-            <!-- project 02  -->
-            <!-- project 01  -->
-            <ProjectOne />
-
-            <!-- project 01  -->
-
-            <!-- project 02  -->
-            <ProjectTwo />
-            <!-- project 02  -->
-            <!-- project 01  -->
-            <ProjectOne />
-
-            <!-- project 01  -->
-
-            <!-- project 02  -->
-            <ProjectTwo />
-            <!-- project 02  -->
-        </div>
-    </div>
-    <div></div>
-    <!-- project grid  -->
 </div>
 
-<!-- full grid layout  -->
+<!-- project grid  -->
 
 <style>
     .modern-scrollbar {

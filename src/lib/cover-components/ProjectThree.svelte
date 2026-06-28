@@ -2,7 +2,7 @@
     href="*"
     target="_blank"
     rel="noopener"
-    class="block aspect-square rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white"
+    class="block rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white col-span-full min-h-[1024px]"
     onclick={(e) => e.preventDefault()}
 >
     <div
