@@ -4,6 +4,7 @@
     import ProjectTwo from '$lib/cover-components/ProjectTwo.svelte';
     import ProjectFour from '$lib/cover-components/ProjectFour.svelte';
     import IntroBlock from '$lib/cover-components/IntroBlock.svelte';
+    import Scsstest from '$lib/cover-components/Scsstest.svelte';
 
     // 1. Define reactive states using runes
     let currentTime = $state('');
@@ -60,13 +61,20 @@
         <ProjectOne />
         <!-- project 01  -->
 
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
+
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
         <!-- project 02  -->
         <ProjectTwo />
         <!-- project 02  -->
 
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
+        <!-- project 01  -->
+        <ProjectOne />
+        <!-- project 01  -->
 
         <!-- project 03  -->
         <ProjectThree />
@@ -119,6 +127,8 @@
         <!-- project 02  -->
         <ProjectTwo />
         <!-- project 02  -->
+
+        <Scsstest />
     </div>
 </div>
 

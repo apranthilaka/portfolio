@@ -1,8 +1,9 @@
+<!-- hover:scale-[1.02] -->
 <a
     href="*"
     target="_blank"
     rel="noopener"
-    class="block aspect-square rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] group bg-white"
+    class="block rounded-lg overflow-hidden transition-transform duration-300 group bg-white col-span-full h-[1024px]"
     onclick={(e) => e.preventDefault()}
 >
     <!-- <img
@@ -28,7 +29,7 @@
         </div>
 
         <div class=" rounded-md border border-gray-300 overflow-hidden w-full">
-            <table class=" divide-y-2 divide-gray-200">
+            <table class=" divide-y-2 divide-gray-200 w-full">
                 <thead class="ltr:text-left rtl:text-right bg-gray-100">
                     <tr class="*:font-semibold *:text-gray-900 min-h-10">
                         <th class="px-3 py-2 whitespace-nowrap">Name</th>
