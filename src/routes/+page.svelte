@@ -61,21 +61,6 @@
         <ProjectOne />
         <!-- project 01  -->
 
-        <!-- project 01  -->
-        <ProjectOne />
-        <!-- project 01  -->
-
-        <!-- project 01  -->
-        <ProjectOne />
-        <!-- project 01  -->
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
-
-        <!-- project 01  -->
-        <ProjectOne />
-        <!-- project 01  -->
-
         <!-- project 03  -->
         <ProjectThree />
         <!-- project 03  -->
@@ -92,43 +77,17 @@
         <ProjectOne />
         <!-- project 01  -->
 
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
+        <!-- project 03  -->
+        <ProjectThree />
+        <!-- project 03  -->
 
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
-
-        <!-- project 01  -->
-        <ProjectOne />
-        <!-- project 01  -->
-
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
+        <!-- project 04  -->
+        <ProjectFour />
+        <!-- project 04  -->
 
         <!-- project 01  -->
         <ProjectOne />
         <!-- project 01  -->
-
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
-
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
-
-        <!-- project 01  -->
-        <ProjectOne />
-        <!-- project 01  -->
-
-        <!-- project 02  -->
-        <ProjectTwo />
-        <!-- project 02  -->
-
-        <Scsstest />
     </div>
 </div>
 
