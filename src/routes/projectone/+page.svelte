@@ -9,7 +9,7 @@
     <div
         class="col-start-1 col-end-2 row-start-1 row-end-2 bg-blue-500 text-white p-2"
     >
-        Top Left
+        Top Left but
     </div>
 
     <!-- Placed in Bottom Left (Col 1 to 2, Row 2 to 3) -->
@@ -28,9 +28,9 @@
 
     <!-- Even though this is LAST in the HTML, we force it to the Top Left slot! -->
     <!-- Placed in Bottom Right (Col 2 to 3, Row 2 to 3) -->
-    <div
-        class="col-start-2 col-end-3 row-start-2 row-end-3 bg-rose-500 text-white p-2"
-    >
+    <div class="col-start-2 col-end-3 row-start-2 row-end-3">
         Bottom Right
+
+        <div></div>
     </div>
 </div>
