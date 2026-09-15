@@ -1,5 +1,6 @@
 <script>
     import P1LeftMenu from '$lib/components/project-one/P1-left-menu.svelte';
+    import * as Card from '$lib/components/ui/card/index.js';
 </script>
 
 <div
@@ -31,6 +32,26 @@
     <div class="col-start-2 col-end-3 row-start-2 row-end-3">
         Bottom Right
 
-        <div></div>
+        <div>
+            <Card.Root>
+                <Card.Header>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Description>Card Description</Card.Description>
+                </Card.Header>
+                <Card.Content>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum suscipit accusantium commodi nam eveniet quo
+                        voluptate sunt rerum delectus eligendi velit dolor,
+                        sapiente cumque, iste modi ducimus ipsa soluta quos!
+                    </p>
+                </Card.Content>
+                <Card.Footer>
+                    <p>
+                        <button>Hello</button>
+                    </p>
+                </Card.Footer>
+            </Card.Root>
+        </div>
     </div>
 </div>
