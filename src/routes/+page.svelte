@@ -12,8 +12,8 @@
             href="https://apranthilaka.com/">Figma designs</a
         >, developed through hybrid, manual coding and AI collaboration.
     </div>
-    <div class="text-sm">Sveltekit • Shadcn • Tailwind4</div>
     ⌁
+    <div class="text-sm">Sveltekit • Shadcn • Tailwind4</div>
     <div class="text-sm">Claude • Ollama/Qwen code</div>
     ⌁
     <div class="text-sm text-neutral-500">
