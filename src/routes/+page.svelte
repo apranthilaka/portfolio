@@ -14,7 +14,7 @@
     </div>
     <div class="text-sm">Sveltekit • Shadcn • Tailwind4</div>
     ⌁
-    <div class="text-sm">Claude • Ollama + Qwen code</div>
+    <div class="text-sm">Claude • Ollama/Qwen code</div>
     ⌁
     <div class="text-sm text-neutral-500">
         Status: Migrating component architecture
