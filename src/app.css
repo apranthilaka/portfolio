@@ -9,9 +9,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Standard global styles */
-body {
+/* body {
     @apply bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200;
-}
+} */
 
 /* app.css */
 
@@ -187,6 +187,9 @@ body {
 }
 
 @layer base {
+    html {
+        font-size: 14px; /* Default is usually 16px */
+    }
     * {
         @apply border-border outline-ring/50;
     }

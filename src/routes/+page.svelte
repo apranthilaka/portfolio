@@ -1,5 +1,5 @@
 <div
-    class="w-full h-screen flex flex-col justify-center items-center text-center text-base bg-slate-50"
+    class="w-full h-screen flex flex-col justify-center items-center text-center bg-slate-50 text-sm"
 >
     <div class="w-10">
         <img src="logo.png" alt="" />
@@ -13,10 +13,10 @@
         >, developed through hybrid, manual coding and AI collaboration.
     </div>
     ⌁
-    <div class="text-sm">Sveltekit • Shadcn • Tailwind4</div>
-    <div class="text-sm">Claude • Ollama/Qwen code</div>
+    <div class="">Sveltekit • Shadcn • Tailwind4</div>
+    <div class="">Claude • Ollama/Qwen code</div>
     ⌁
-    <div class="text-sm text-neutral-500">
+    <div class="text-xs text-neutral-500">
         Status: Migrating component architecture
     </div>
 </div>
