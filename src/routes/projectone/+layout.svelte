@@ -7,7 +7,7 @@
 </script>
 
 <div
-    class="grid grid-cols-[280px_1fr] grid-rows-[40px_1fr] w-full h-screen text-sm text-neutral-700"
+    class="grid grid-cols-[250px_1fr] grid-rows-[40px_1fr] w-full h-screen text-sm text-neutral-700"
 >
     <!-- Placed in Top Left (Col 1 to 2, Row 1 to 2) -->
     <div class="col-start-1 col-end-2 row-start-1 row-end-2 text-white">
@@ -20,7 +20,9 @@
     </div>
 
     <!-- Placed in Top Right (Col 2 to 3, Row 1 to 2) -->
-    <div class="col-start-2 col-end-3 row-start-1 row-end-2 text-black">
+    <div
+        class="col-start-2 col-end-3 row-start-1 row-end-2 text-black border border-b-neutral-200"
+    >
         <P1TopMenu />
     </div>
 
