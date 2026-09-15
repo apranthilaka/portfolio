@@ -5,7 +5,7 @@
         <img src="logo.png" alt="" />
     </div>
     <div class="font-medium text-lg mb-2">Launching Soon.</div>
-    <div class="max-w-110 mb-4">
+    <div class="max-w-110">
         Interactive web implementations of my <a
             target="_blank"
             class="underline"
